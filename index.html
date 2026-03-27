@@ -479,7 +479,7 @@
     </div>
     <div style="display:flex;gap:20px;flex-wrap:wrap;">
       <span class="topbar-item"><i class="fas fa-briefcase"></i> <a href="#">Hire From Us</a></span>
-      <span class="topbar-item"><i class="fas fa-envelope"></i> <a href="mailto:info@intelexatechnologies.com">info@intelexatechnologies.com</a></span>
+      <span class="topbar-item"><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection#98f1f6fef7d8f1f6ecfdf4fde0f9ecfdfbf0f6f7f4f7fff1fdebb6fbf7f5"><span class="__cf_email__" data-cfemail="7a13141c153a13140e1f161f021b0e1f1912141516151d131f0954191517">[email&#160;protected]</span></a></span>
     </div>
   </div>
 </div>
@@ -493,7 +493,7 @@
       <li>
         <a href="#">All Courses <i class="fas fa-chevron-down" style="font-size:10px;"></i></a>
         <div class="dropdown">
-		  <a href="#">Data Science with GenAI & Agentic AI</a>	
+		  <a href="ds-course.html">Data Science with GenAI & Agentic AI</a>	
           <a href="#">Full Stack Software Testing with AI</a>
 		  <a href="#">DEVOPS with Multi-Cloud and AI</a>
           <a href="#">Selenium Automation Testing</a>
@@ -538,6 +538,7 @@
     <div class="close-mobile" onclick="closeMobileNav()"><i class="fas fa-times"></i></div>
     <ul>
       <li><a href="#">Home</a></li>
+      <li><a href="ds-course.html">Data Science with GenAI</a></li>
       <li><a href="#">All Courses</a></li>
       <li><a href="#">New Batches</a></li>
       <li><a href="#">Current Openings</a></li>
@@ -666,6 +667,12 @@
       <div class="underline"></div>
     </div>
     <div class="courses-grid fade-up">
+      <div class="course-card" onclick="window.location.href='ds-course.html'" style="border:2px solid var(--primary);position:relative;cursor:pointer;" tabindex="0" role="link" aria-label="Data Science with GenAI and Agentic AI course page" onkeydown="if(event.key==='Enter')window.location.href='ds-course.html'">
+        <span style="position:absolute;top:10px;right:10px;background:var(--accent);color:#fff;font-size:10px;font-weight:900;padding:2px 8px;border-radius:20px;letter-spacing:.5px;">⭐ NEW</span>
+        <div class="course-icon" style="background:linear-gradient(135deg,#1a2a4a,#3a5a9a);"><i class="fas fa-brain"></i></div>
+        <h4>Data Science with GenAI &amp; Agentic AI</h4>
+        <span class="course-cat">Data Science</span>
+      </div>
       <div class="course-card">
         <div class="course-icon"><i class="fas fa-bug"></i></div>
         <h4>Full Stack Software Testing with AI</h4>
@@ -992,7 +999,7 @@
       <h5>Contact Us</h5>
       <a href="tel:+919154112233"><i class="fas fa-phone" style="color:var(--accent);"></i> +91 93 93 08 08 05</a>
       <a href="tel:+919154123123"><i class="fas fa-phone" style="color:var(--accent);"></i> +91 93 93 08 08 05</a>
-      <a href="mailto:info@Intelexatech.com"><i class="fas fa-envelope" style="color:var(--accent);"></i> info@Intelexatech.com</a>
+      <a href="/cdn-cgi/l/email-protection#70191e161f30391e04151c150811041513185e131f1d"><i class="fas fa-envelope" style="color:var(--accent);"></i> <span class="__cf_email__" data-cfemail="40292e262f00092e34252c253821342523286e232f2d">[email&#160;protected]</span></a>
       <a href="#"><i class="fas fa-map-marker-alt" style="color:var(--accent);"></i> Ameerpet, Hyderabad</a>
       <a href="#"><i class="fas fa-map-marker-alt" style="color:var(--accent);"></i> Toronto, Canada</a>
 	  <a href="#"><i class="fas fa-map-marker-alt" style="color:var(--accent);"></i> Dallas, US</a>
@@ -1010,7 +1017,7 @@
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Scroll animation
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
@@ -1045,15 +1052,4 @@
       const timer = setInterval(() => {
         start += step;
         if (start >= num) { start = num; clearInterval(timer); }
-        el.textContent = (Number.isInteger(num) ? Math.floor(start) : start.toFixed(0)) + suffix;
-      }, 20);
-    });
-  }
-  const statsObserver = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { animateCounters(); statsObserver.disconnect(); } });
-  }, { threshold: 0.3 });
-  const statsBar = document.querySelector('.stats-bar');
-  if (statsBar) statsObserver.observe(statsBar);
-</script>
-</body>
-</html>
+        el.textContent = (Number.isInteger(num) 

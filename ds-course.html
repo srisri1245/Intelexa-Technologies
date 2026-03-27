@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ═══ SEO META TAGS ═══ -->
+<title>Full Stack Data Science with GenAI &amp; Agentic AI Course | Intelexa Technologies Hyderabad</title>
+<meta name="description" content="Master Full Stack Data Science with Python, Machine Learning, Deep Learning, NLP, Computer Vision, Generative AI &amp; Agentic AI. Trained by Y. Sri Ram PhD. 100% Placement Support. Online &amp; Classroom — Hyderabad, Canada, USA.">
+<meta name="keywords" content="data science course hyderabad, machine learning training, deep learning course, NLP training, computer vision, generative AI course, agentic AI, Python training, SQL BigQuery, full stack data science, Intelexa Technologies, online data science certification, placement assistance">
+<meta name="author" content="Intelexa Technologies">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#e8381a">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Full Stack Data Science with GenAI &amp; Agentic AI | Intelexa Technologies">
+<meta property="og:description" content="Industry-leading Data Science program — Python to GenAI. Trained by PhD expert Y. Sri Ram. 100% placement support. Enroll for Free Demo.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://intelexatech.com/data-science-genai-course">
+<meta property="og:site_name" content="Intelexa Technologies">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Full Stack Data Science with GenAI &amp; Agentic AI | Intelexa">
+<meta name="twitter:description" content="Python → ML → DL → NLP → CV → GenAI → Agentic AI. Expert-led. 365-Day Placement Support.">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://intelexatech.com/data-science-genai-course">
+
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Full Stack Data Science with GenAI & Agentic AI",
+  "description": "Comprehensive Full Stack Data Science program covering Python, Statistics, Machine Learning, Deep Learning, NLP, Computer Vision, Generative AI, Agentic AI, MLOps with 8 real-world business case studies and 100% placement support.",
+  "url": "https://intelexatech.com/data-science-genai-course",
+  "provider": {
+    "@type": "Organization",
+    "name": "Intelexa Technologies",
+    "url": "https://intelexatech.com",
+    "sameAs": [
+      "https://in.linkedin.com/company/Intelexatech",
+      "https://www.facebook.com/Intelexatech"
+    ]
+  },
+  "instructor": {
+    "@type": "Person",
+    "name": "Y. Sri Ram",
+    "honorificSuffix": "PhD",
+    "description": "PhD in Data Science with 15+ years of industry experience in ML and AI"
+  },
+  "courseMode": ["Blended","Online","In-person"],
+  "educationalLevel": "Beginner to Advanced",
+  "timeRequired": "P6M",
+  "teaches": ["Python Programming","Machine Learning","Deep Learning","Natural Language Processing","Computer Vision","Generative AI","SQL","Tableau","MLOps","Agentic AI"],
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Blended",
+    "location": "Ameerpet, Hyderabad",
+    "offers": {"@type": "Offer","availability": "https://schema.org/InStock"}
+  }
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+/* ═══════════════════════════════════════════════
+   CSS VARIABLES — identical to main site
+═══════════════════════════════════════════════ */
+:root {
+  --primary:      #e8381a;
+  --primary-dark: #c42d10;
+  --secondary:    #1a2a4a;
+  --accent:       #f5a623;
+  --light-bg:     #f8f9fc;
+  --text:         #333;
+  --text-light:   #666;
+  --white:        #fff;
+  --border:       #e0e0e0;
+  --shadow:       0 4px 24px rgba(0,0,0,0.08);
+  --shadow-md:    0 8px 32px rgba(0,0,0,0.10);
+  --shadow-lg:    0 16px 48px rgba(0,0,0,0.14);
+}
+*  { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Nunito',sans-serif; color:var(--text); overflow-x:hidden; scroll-behavior:smooth; }
+a  { text-decoration:none; color:inherit; }
+img { max-width:100%; display:block; }
+
+/* ── SCROLL PROGRESS ── */
+#scroll-prog {
+  position:fixed; top:0; left:0; height:3px;
+  background:var(--primary); z-index:9999; width:0%;
+  transition:width .1s linear;
+}
+
+/* ── TOP BAR ── */
+.topbar { background:var(--secondary); color:#fff; font-size:13px; padding:6px 0; }
+.topbar .inner { max-width:1200px; margin:auto; padding:0 20px; display:flex; flex-wrap:wrap; gap:16px; align-items:center; justify-content:space-between; }
+.topbar a { color:#ccc; transition:color .2s; }
+.topbar a:hover { color:var(--accent); }
+.tb-item { display:flex; align-items:center; gap:6px; }
+.tb-item i { color:var(--accent); }
+.tb-item span { color:var(--accent); font-weight:700; }
+
+/* ── NAVBAR ── */
+nav {
+  background:#fff;
+  box-shadow:0 2px 12px rgba(0,0,0,0.10);
+  position:sticky; top:0; z-index:1000;
+}
+.nav-inner {
+  max-width:1200px; margin:auto; padding:0 20px;
+  display:flex; align-items:center; justify-content:space-between;
+  height:70px;
+}
+.logo-text { font-size:24px; font-weight:900; color:var(--secondary); }
+.logo-text span { color:var(--primary); }
+.nav-links { display:flex; align-items:center; gap:4px; list-style:none; }
+.nav-links > li { position:relative; }
+.nav-links > li > a {
+  padding:8px 14px; font-weight:700; font-size:14px; color:var(--secondary);
+  display:flex; align-items:center; gap:4px; border-radius:4px;
+  transition:color .2s, background .2s;
+}
+.nav-links > li > a:hover,
+.nav-links > li > a.active { color:var(--primary); background:rgba(232,56,26,0.05); }
+.dropdown {
+  position:absolute; top:100%; left:0;
+  background:#fff; min-width:260px;
+  box-shadow:0 8px 30px rgba(0,0,0,0.15);
+  border-top:3px solid var(--primary);
+  border-radius:0 0 8px 8px;
+  opacity:0; visibility:hidden;
+  transform:translateY(8px); transition:.2s; z-index:100;
+}
+.nav-links > li:hover .dropdown { opacity:1; visibility:visible; transform:translateY(0); }
+.dropdown a {
+  display:flex; align-items:center; gap:10px;
+  padding:11px 18px; font-size:13px; font-weight:600; color:var(--text);
+  border-bottom:1px solid #f0f0f0; transition:background .2s, color .2s;
+}
+.dropdown a:hover { background:var(--light-bg); color:var(--primary); }
+.dropdown a.dd-active { background:rgba(232,56,26,0.06); color:var(--primary); font-weight:800; }
+.dropdown a i { width:16px; color:var(--primary); }
+.btn-enroll {
+  background:var(--primary) !important; color:#fff !important;
+  padding:10px 22px !important; border-radius:30px !important;
+  font-weight:800 !important; font-size:14px !important;
+  transition:background .2s, transform .15s !important;
+}
+.btn-enroll:hover { background:var(--primary-dark) !important; transform:scale(1.04) !important; }
+.hamburger { display:none; font-size:24px; cursor:pointer; color:var(--secondary); }
+
+/* ── MOBILE NAV ── */
+.mob-nav { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.55); z-index:2000; }
+.mob-nav.open { display:block; }
+.mob-panel {
+  background:#fff; width:85%; max-width:340px; height:100%;
+  overflow-y:auto; padding:20px;
+  transform:translateX(-100%); transition:.3s;
+}
+.mob-nav.open .mob-panel { transform:translateX(0); }
+.mob-panel ul { list-style:none; margin-top:10px; }
+.mob-panel ul li a {
+  display:block; padding:13px 0; font-weight:700; font-size:14px;
+  border-bottom:1px solid var(--border); color:var(--secondary);
+  transition:color .15s;
+}
+.mob-panel ul li a:hover { color:var(--primary); }
+.mob-close { font-size:24px; cursor:pointer; color:var(--secondary); margin-bottom:16px; }
+
+/* ── BREADCRUMB ── */
+.breadcrumb-wrap { background:var(--light-bg); border-bottom:1px solid var(--border); padding:11px 0; }
+.breadcrumb-wrap .inner { max-width:1200px; margin:auto; padding:0 20px; }
+.breadcrumb { display:flex; align-items:center; gap:7px; font-size:13px; color:var(--text-light); flex-wrap:wrap; }
+.breadcrumb a { color:var(--primary); font-weight:600; transition:opacity .2s; }
+.breadcrumb a:hover { opacity:.75; }
+.breadcrumb i { font-size:10px; }
+
+/* ══════════════════════════════════════════════
+   COURSE HERO
+══════════════════════════════════════════════ */
+.course-hero {
+  background:linear-gradient(135deg, var(--secondary) 0%, #0d1f3c 55%, #1a3566 100%);
+  color:#fff; padding:64px 20px 72px; position:relative; overflow:hidden;
+}
+.course-hero::before {
+  content:''; position:absolute; inset:0; pointer-events:none;
+  background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+/* floating glow orbs */
+.course-hero::after {
+  content:''; position:absolute; top:-80px; right:-80px;
+  width:340px; height:340px; border-radius:50%;
+  background:radial-gradient(circle, rgba(232,56,26,0.18) 0%, transparent 70%);
+  pointer-events:none;
+}
+.hero-inner {
+  max-width:1200px; margin:auto; position:relative; z-index:1;
+  display:flex; gap:52px; align-items:flex-start; flex-wrap:wrap;
+}
+.hero-left  { flex:1; min-width:280px; }
+.hero-right { flex:0 0 346px; }
+
+/* badge */
+.course-badge {
+  display:inline-flex; align-items:center; gap:7px;
+  background:var(--primary); color:#fff;
+  padding:5px 16px; border-radius:30px;
+  font-size:12px; font-weight:800; letter-spacing:.6px;
+  text-transform:uppercase; margin-bottom:18px;
+}
+/* heading */
+.hero-left h1 {
+  font-size:clamp(26px,3.6vw,46px); font-weight:900; line-height:1.18;
+  margin-bottom:20px;
+}
+.hero-left h1 span { color:var(--accent); }
+
+/* 4-line description */
+.course-description {
+  font-size:15.5px; line-height:1.82; color:rgba(255,255,255,0.86);
+  border-left:3px solid var(--primary); padding-left:16px;
+  margin-bottom:26px;
+}
+
+/* meta pills */
+.meta-row { display:flex; flex-wrap:wrap; gap:18px; margin-bottom:26px; }
+.meta-pill { display:flex; align-items:center; gap:8px; font-size:13.5px; color:rgba(255,255,255,0.78); }
+.meta-pill i { color:var(--accent); font-size:14px; }
+.meta-pill strong { color:#fff; }
+
+/* tag pills */
+.tag-row { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:28px; }
+.tag-pill {
+  background:rgba(255,255,255,0.10); border:1px solid rgba(255,255,255,0.22);
+  color:#fff; padding:5px 14px; border-radius:20px; font-size:12.5px; font-weight:700;
+  transition:background .2s;
+}
+.tag-pill:hover { background:rgba(255,255,255,0.18); }
+
+/* CTA buttons */
+.hero-btns { display:flex; gap:14px; flex-wrap:wrap; }
+.btn-hero-primary {
+  background:var(--primary); color:#fff;
+  padding:14px 30px; border-radius:30px;
+  font-weight:800; font-size:15px; border:none; cursor:pointer;
+  display:inline-flex; align-items:center; gap:8px;
+  transition:background .2s, transform .15s, box-shadow .2s;
+  font-family:'Nunito',sans-serif;
+}
+.btn-hero-primary:hover {
+  background:var(--primary-dark); transform:translateY(-2px);
+  box-shadow:0 8px 24px rgba(232,56,26,0.42);
+}
+.btn-hero-outline {
+  background:transparent; color:#fff;
+  padding:14px 28px; border-radius:30px;
+  font-weight:800; font-size:15px;
+  border:2px solid rgba(255,255,255,0.45);
+  cursor:pointer; display:inline-flex; align-items:center; gap:8px;
+  transition:border-color .2s, background .2s;
+  font-family:'Nunito',sans-serif;
+}
+.btn-hero-outline:hover { border-color:#fff; background:rgba(255,255,255,0.10); }
+
+/* ── ENROL FORM CARD ── */
+.enrol-card {
+  background:#fff; border-radius:16px; padding:30px 28px;
+  box-shadow:0 24px 64px rgba(0,0,0,0.32);
+}
+.enrol-card h3 {
+  color:var(--secondary); font-size:18px; font-weight:900;
+  text-align:center; margin-bottom:4px;
+}
+.enrol-card .form-sub {
+  color:var(--text-light); font-size:12.5px; text-align:center;
+  margin-bottom:20px;
+}
+.form-row { margin-bottom:13px; }
+.form-row input,
+.form-row select {
+  width:100%; padding:11px 14px;
+  border:1.5px solid var(--border); border-radius:8px;
+  font-size:14px; font-family:'Nunito',sans-serif; color:var(--text);
+  transition:border-color .2s; -webkit-appearance:none; background:#fff;
+}
+.form-row input:focus,
+.form-row select:focus { outline:none; border-color:var(--primary); }
+.form-row input::placeholder { color:#aaa; }
+.btn-form-submit {
+  width:100%; padding:13px;
+  background:var(--primary); color:#fff;
+  border:none; border-radius:8px;
+  font-size:15px; font-weight:800;
+  cursor:pointer; font-family:'Nunito',sans-serif;
+  transition:background .2s, transform .15s;
+  display:flex; align-items:center; justify-content:center; gap:8px;
+}
+.btn-form-submit:hover { background:var(--primary-dark); transform:translateY(-1px); }
+.form-note {
+  font-size:11.5px; color:var(--text-light);
+  text-align:center; margin-top:11px;
+  display:flex; align-items:center; justify-content:center; gap:5px;
+}
+.form-note i { color:var(--primary); }
+
+/* ── STATS BAR ── */
+.stats-bar { background:var(--primary); padding:20px 0; }
+.stats-inner {
+  max-width:1200px; margin:auto; padding:0 20px;
+  display:flex; flex-wrap:wrap; justify-content:space-around; gap:14px;
+}
+.stat-item { text-align:center; color:#fff; }
+.stat-num  { font-size:clamp(24px,3vw,32px); font-weight:900; display:block; line-height:1.1; }
+.stat-lbl  { font-size:12px; opacity:.85; font-weight:600; margin-top:2px; }
+
+/* ══════════════════════════════════════════════
+   PAGE LAYOUT — two-column with sticky sidebar
+══════════════════════════════════════════════ */
+.page-wrap {
+  max-width:1200px; margin:0 auto; padding:52px 20px 60px;
+  display:flex; gap:34px; align-items:flex-start;
+}
+.content { flex:1; min-width:0; }
+.sidebar  { flex:0 0 300px; position:sticky; top:86px; }
+
+/* ── SECTION TITLE PATTERN ── */
+.sec-hd { margin-bottom:28px; }
+.sec-hd h2 {
+  font-size:clamp(20px,2.6vw,28px); font-weight:900; color:var(--secondary);
+  margin-bottom:8px;
+}
+.sec-hd p { font-size:14.5px; color:var(--text-light); line-height:1.65; margin-bottom:14px; }
+.sec-underline { width:52px; height:4px; background:var(--primary); border-radius:2px; }
+
+/* ── INSTRUCTOR BANNER ── */
+.instructor-banner {
+  background:linear-gradient(135deg, var(--secondary) 0%, #1a3566 100%);
+  border-radius:16px; padding:28px 30px; color:#fff;
+  display:flex; gap:24px; align-items:center; flex-wrap:wrap;
+  margin-bottom:44px;
+  box-shadow:var(--shadow-md);
+}
+.inst-avatar {
+  width:92px; height:92px; border-radius:50%; flex-shrink:0;
+  background:linear-gradient(135deg, var(--primary), #ff6b4a);
+  display:flex; align-items:center; justify-content:center;
+  font-size:30px; font-weight:900; color:#fff;
+  border:3px solid rgba(255,255,255,0.22);
+  box-shadow:0 6px 20px rgba(0,0,0,0.25);
+}
+.inst-body h3  { font-size:21px; font-weight:900; margin-bottom:3px; }
+.inst-cred     { color:var(--accent); font-weight:800; font-size:13.5px; margin-bottom:10px; display:flex; align-items:center; gap:8px; }
+.inst-cred i   { font-size:12px; }
+.inst-body p   { font-size:13.5px; color:rgba(255,255,255,0.82); line-height:1.68; max-width:560px; }
+.inst-tags     { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+.inst-tag {
+  background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.20);
+  padding:4px 13px; border-radius:20px; font-size:11.5px; font-weight:700; color:#fff;
+}
+
+/* ── HIGHLIGHTS GRID ── */
+.highlights { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:16px; margin-bottom:44px; }
+.hl-card {
+  background:#fff; border-radius:13px; padding:22px 16px; text-align:center;
+  box-shadow:var(--shadow); border-top:3px solid var(--primary);
+  transition:.25s;
+}
+.hl-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-md); }
+.hl-icon {
+  width:52px; height:52px; border-radius:50%;
+  background:linear-gradient(135deg,var(--primary),#ff6b4a);
+  display:flex; align-items:center; justify-content:center;
+  margin:0 auto 13px; font-size:20px; color:#fff;
+}
+.hl-card h5 { font-size:13.5px; font-weight:800; color:var(--secondary); line-height:1.4; }
+.hl-card p  { font-size:12px; color:var(--text-light); margin-top:4px; line-height:1.5; }
+
+/* ── CURRICULUM ACCORDION ── */
+.curriculum { margin-bottom:44px; }
+.module {
+  border:1px solid var(--border); border-radius:12px;
+  overflow:hidden; margin-bottom:10px;
+  transition:box-shadow .2s;
+}
+.module:hover { box-shadow:var(--shadow); }
+.mod-head {
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  padding:16px 20px; cursor:pointer; user-select:none;
+  background:#fff; transition:background .15s;
+}
+.mod-head:hover { background:rgba(232,56,26,0.03); }
+.mod-head.is-open { background:var(--secondary); color:#fff; }
+.mod-head.is-open .mod-icon { background:rgba(255,255,255,0.15); }
+.mod-head.is-open .mod-title-txt { color:#fff; }
+.mod-head.is-open .mod-sub { color:rgba(255,255,255,0.6); }
+.mod-head.is-open .chev { color:#fff; transform:rotate(180deg); }
+.mod-left { display:flex; align-items:center; gap:13px; min-width:0; }
+.mod-icon {
+  width:34px; height:34px; border-radius:50%; flex-shrink:0;
+  background:var(--primary); color:#fff;
+  display:flex; align-items:center; justify-content:center;
+  font-size:12px; font-weight:900;
+}
+.mod-texts { min-width:0; }
+.mod-title-txt { font-size:14px; font-weight:800; color:var(--secondary); }
+.mod-sub { font-size:12px; color:var(--text-light); margin-top:2px; }
+.chev { color:var(--text-light); font-size:13px; transition:transform .25s, color .15s; flex-shrink:0; }
+
+.mod-body {
+  display:none; background:var(--light-bg);
+  padding:20px 22px 22px; border-top:1px solid var(--border);
+}
+.mod-body.is-open { display:block; }
+
+/* sub-section label inside module */
+.sub-label {
+  font-size:11px; font-weight:900; text-transform:uppercase; letter-spacing:.7px;
+  color:var(--primary); margin:14px 0 8px; padding-bottom:4px;
+  border-bottom:1px dashed rgba(232,56,26,0.25);
+}
+.sub-label:first-child { margin-top:0; }
+
+/* topics grid */
+.topics { display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:6px; }
+.topic {
+  display:flex; align-items:flex-start; gap:8px;
+  padding:7px 10px; background:#fff; border-radius:7px;
+  font-size:13px; color:var(--text); line-height:1.4;
+}
+.topic i { color:var(--primary); font-size:11px; margin-top:2px; flex-shrink:0; }
+.topic.starred i { color:var(--accent); }
+
+/* expand-all button */
+.expand-btn {
+  display:flex; align-items:center; gap:8px;
+  margin:18px auto 0; padding:10px 28px;
+  background:transparent; border:2px solid var(--secondary); color:var(--secondary);
+  border-radius:30px; font-weight:800; font-size:13.5px;
+  cursor:pointer; font-family:'Nunito',sans-serif;
+  transition:background .2s, color .2s;
+}
+.expand-btn:hover { background:var(--secondary); color:#fff; }
+
+/* ── TOOLS SECTION ── */
+.tools-section { margin-bottom:44px; }
+.tools-grid { display:flex; flex-wrap:wrap; gap:10px; margin-top:4px; }
+.tool-chip {
+  display:flex; align-items:center; gap:7px;
+  background:#fff; border:1.5px solid var(--border);
+  padding:7px 16px; border-radius:22px;
+  font-size:13px; font-weight:700; color:var(--secondary);
+  transition:border-color .2s, color .2s, transform .15s;
+  cursor:default;
+}
+.tool-chip:hover { border-color:var(--primary); color:var(--primary); transform:translateY(-2px); }
+.tool-chip i { color:var(--primary); font-size:13px; }
+
+/* ── SIDEBAR ── */
+.sb-card {
+  background:#fff; border-radius:14px; box-shadow:var(--shadow);
+  padding:22px 20px; margin-bottom:20px;
+  border-top:4px solid var(--primary);
+}
+.sb-card h4 { font-size:15px; font-weight:900; color:var(--secondary); margin-bottom:16px; }
+.sb-row { display:flex; align-items:flex-start; gap:11px; margin-bottom:13px; font-size:13.5px; }
+.sb-row:last-child { margin-bottom:0; }
+.sb-row i { color:var(--primary); width:17px; flex-shrink:0; margin-top:2px; }
+.sb-row strong { color:var(--secondary); display:block; font-size:12px; text-transform:uppercase; letter-spacing:.4px; margin-bottom:1px; }
+.sb-row span { color:var(--text-light); }
+.btn-sb-enrol {
+  display:block; width:100%; padding:14px;
+  background:var(--primary); color:#fff; text-align:center;
+  border-radius:10px; font-weight:900; font-size:15px;
+  transition:background .2s, transform .15s, box-shadow .2s;
+  border:none; cursor:pointer; font-family:'Nunito',sans-serif;
+  margin-bottom:10px;
+}
+.btn-sb-enrol:hover { background:var(--primary-dark); transform:translateY(-2px); box-shadow:0 6px 20px rgba(232,56,26,0.35); }
+.btn-sb-demo {
+  display:block; width:100%; padding:12px;
+  background:transparent; color:var(--secondary); text-align:center;
+  border-radius:10px; font-weight:800; font-size:14px;
+  border:2px solid var(--secondary); cursor:pointer;
+  font-family:'Nunito',sans-serif; transition:background .2s, color .2s;
+}
+.btn-sb-demo:hover { background:var(--secondary); color:#fff; }
+.learn-list { list-style:none; display:flex; flex-direction:column; gap:8px; }
+.learn-list li { display:flex; align-items:flex-start; gap:8px; font-size:13px; color:var(--text); line-height:1.45; }
+.learn-list li i { color:var(--primary); margin-top:2px; flex-shrink:0; font-size:11px; }
+
+/* ── CTA BAND ── */
+.cta-band {
+  background:linear-gradient(135deg,var(--secondary),#0d1f3c);
+  color:#fff; text-align:center; padding:60px 20px;
+}
+.cta-band h2 { font-size:clamp(22px,3vw,34px); font-weight:900; margin-bottom:12px; }
+.cta-band p  { font-size:16px; opacity:.8; margin-bottom:28px; }
+.cta-btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; align-items:center; }
+.btn-p {
+  background:var(--primary); color:#fff;
+  padding:14px 30px; border-radius:30px;
+  font-weight:800; font-size:15px; transition:.2s;
+  border:none; cursor:pointer; display:inline-flex;
+  align-items:center; gap:8px; font-family:'Nunito',sans-serif;
+}
+.btn-p:hover { background:var(--primary-dark); transform:translateY(-2px); box-shadow:0 6px 20px rgba(232,56,26,0.4); }
+.btn-o {
+  background:transparent; color:#fff;
+  padding:14px 28px; border-radius:30px;
+  font-weight:800; font-size:15px;
+  border:2px solid rgba(255,255,255,0.5);
+  cursor:pointer; display:inline-flex; align-items:center; gap:8px;
+  transition:.2s; font-family:'Nunito',sans-serif;
+}
+.btn-o:hover { border-color:#fff; background:rgba(255,255,255,0.10); }
+
+/* ── FOOTER ── */
+footer { background:var(--secondary); color:rgba(255,255,255,0.85); padding:60px 20px 20px; }
+.footer-grid {
+  max-width:1200px; margin:auto;
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+  gap:32px; margin-bottom:40px;
+}
+.fc h5 {
+  color:#fff; font-size:14px; font-weight:800; margin-bottom:16px;
+  position:relative; padding-bottom:10px;
+}
+.fc h5::after { content:''; position:absolute; bottom:0; left:0; width:30px; height:2px; background:var(--primary); }
+.fc ul { list-style:none; }
+.fc ul li { margin-bottom:8px; }
+.fc ul li a { font-size:13px; color:rgba(255,255,255,0.70); transition:color .15s; }
+.fc ul li a:hover { color:var(--accent); }
+.fc p { font-size:13px; line-height:1.7; color:rgba(255,255,255,0.70); }
+.fc-contact a { display:flex; align-items:center; gap:8px; font-size:13px; color:rgba(255,255,255,0.70); margin-bottom:10px; transition:color .15s; }
+.fc-contact a:hover { color:var(--accent); }
+.socials { display:flex; gap:12px; margin-top:16px; }
+.socials a {
+  width:36px; height:36px; border-radius:50%;
+  background:rgba(255,255,255,0.10);
+  display:flex; align-items:center; justify-content:center;
+  font-size:14px; color:#fff; transition:background .2s;
+}
+.socials a:hover { background:var(--primary); }
+.footer-bot {
+  border-top:1px solid rgba(255,255,255,0.10);
+  max-width:1200px; margin:0 auto; padding-top:20px;
+  display:flex; justify-content:space-between; align-items:center;
+  flex-wrap:wrap; gap:10px; font-size:13px; color:rgba(255,255,255,0.50);
+}
+.footer-bot a { color:rgba(255,255,255,0.50); transition:color .15s; }
+.footer-bot a:hover { color:var(--accent); }
+
+/* ── WHATSAPP FLOAT ── */
+.wa-float {
+  position:fixed; bottom:26px; right:26px; z-index:500;
+  background:#25d366; color:#fff;
+  width:58px; height:58px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-size:27px; box-shadow:0 4px 20px rgba(37,211,102,0.55);
+  transition:transform .2s, box-shadow .2s;
+}
+.wa-float:hover { transform:scale(1.12); box-shadow:0 6px 28px rgba(37,211,102,0.65); }
+
+/* ── SCROLL ANIMATION ── */
+.fade-up { opacity:0; transform:translateY(28px); transition:.6s ease; }
+.fade-up.visible { opacity:1; transform:translateY(0); }
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════ */
+@media(max-width:1024px) {
+  .sidebar { display:none; }
+  .hero-right { display:none; }
+  .page-wrap  { padding:40px 16px 50px; }
+}
+@media(max-width:768px) {
+  .nav-links { display:none; }
+  .hamburger { display:block; }
+  .page-wrap  { padding:28px 14px 44px; }
+  .highlights { grid-template-columns:repeat(2,1fr); }
+  .topics     { grid-template-columns:1fr; }
+  .instructor-banner { flex-direction:column; text-align:center; }
+  .inst-tags  { justify-content:center; }
+  .hero-btns  { justify-content:center; }
+  .meta-row   { justify-content:center; }
+  .tag-row    { justify-content:center; }
+  .hero-left  { text-align:center; }
+  .course-description { text-align:left; }
+}
+@media(max-width:480px) {
+  .highlights { grid-template-columns:1fr; }
+  .stats-inner { gap:10px; }
+}
+</style>
+</head>
+<body>
+
+<div id="scroll-prog"></div>
+
+<!-- ════════════════════ TOP BAR ════════════════════ -->
+<div class="topbar">
+  <div class="inner">
+    <div style="display:flex;gap:18px;flex-wrap:wrap;">
+      <span class="tb-item"><i class="fas fa-map-marker-alt"></i> Ameerpet, Hyd &nbsp;<span>+91 9642367632</span></span>
+      <span class="tb-item"><i class="fas fa-map-marker-alt"></i> Toronto, Canada &nbsp;<span>+1 2899014184</span></span>
+      <span class="tb-item"><i class="fas fa-map-marker-alt"></i> Dallas, Texas, US &nbsp;<span>+1 9802299422</span></span>
+    </div>
+    <div style="display:flex;gap:18px;flex-wrap:wrap;">
+      <span class="tb-item"><i class="fas fa-briefcase"></i> <a href="#">Hire From Us</a></span>
+      <span class="tb-item"><i class="fas fa-envelope"></i> <a href="mailto:info@intelexatech.com">info@intelexatech.com</a></span>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════ NAVBAR ════════════════════ -->
+<nav aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="logo-text" aria-label="Intelexa Technologies Home"><span>Intelexa</span> Technologies</a>
+    <ul class="nav-links" role="menubar">
+      <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+      <li role="none">
+        <a href="#" role="menuitem" aria-haspopup="true">All Courses <i class="fas fa-chevron-down" style="font-size:10px;"></i></a>
+        <div class="dropdown" role="menu" aria-label="All Courses">
+          <a href="ds-course.html" class="dd-active" role="menuitem"><i class="fas fa-brain"></i>Data Science with GenAI &amp; Agentic AI</a>
+          <a href="#" role="menuitem"><i class="fas fa-bug"></i>Full Stack Software Testing with AI</a>
+          <a href="#" role="menuitem"><i class="fas fa-cloud"></i>DEVOPS with Multi-Cloud and AI</a>
+          <a href="#" role="menuitem"><i class="fas fa-cog"></i>Selenium Automation Testing</a>
+          <a href="#" role="menuitem"><i class="fab fa-microsoft"></i>Azure Data Engineer</a>
+          <a href="#" role="menuitem"><i class="fas fa-play-circle"></i>Playwright Automation Testing</a>
+          <a href="#" role="menuitem"><i class="fab fa-java"></i>Java Full Stack with AI</a>
+          <a href="#" role="menuitem"><i class="fab fa-python"></i>Python Full Stack with AI</a>
+        </div>
+      </li>
+      <li role="none"><a href="#" role="menuitem">New Batches</a></li>
+      <li role="none">
+        <a href="#" role="menuitem" aria-haspopup="true">Placements <i class="fas fa-chevron-down" style="font-size:10px;"></i></a>
+        <div class="dropdown" role="menu">
+          <a href="#" role="menuitem"><i class="fas fa-briefcase"></i>Current Openings</a>
+          <a href="#" role="menuitem"><i class="fas fa-trophy"></i>Recent Placements</a>
+          <a href="#" role="menuitem"><i class="fas fa-users"></i>All Placed</a>
+          <a href="#" role="menuitem"><i class="fas fa-building"></i>Placed Companies</a>
+        </div>
+      </li>
+      <li role="none"><a href="#" role="menuitem">Reviews</a></li>
+      <li role="none">
+        <a href="#" role="menuitem" aria-haspopup="true">Students Zone <i class="fas fa-chevron-down" style="font-size:10px;"></i></a>
+        <div class="dropdown" role="menu">
+          <a href="#" role="menuitem"><i class="fas fa-pen"></i>Blog</a>
+          <a href="#" role="menuitem"><i class="fas fa-project-diagram"></i>Projects</a>
+          <a href="#" role="menuitem"><i class="fas fa-question-circle"></i>Interview Questions</a>
+          <a href="#" role="menuitem"><i class="fas fa-video"></i>Tutorials</a>
+          <a href="#" role="menuitem"><i class="fas fa-file-alt"></i>Resumes</a>
+          <a href="#" role="menuitem"><i class="fas fa-download"></i>Downloads</a>
+        </div>
+      </li>
+      <li role="none"><a href="#" role="menuitem">Contact Us</a></li>
+      <li role="none"><a href="#enrol" class="btn-enroll" role="menuitem">Enroll Now</a></li>
+    </ul>
+    <button class="hamburger" onclick="openMob()" aria-label="Open menu" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mob-nav" id="mobNav" onclick="closeMobOutside(event)" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <div class="mob-panel">
+    <div class="mob-close" onclick="closeMob()" aria-label="Close menu"><i class="fas fa-times"></i></div>
+    <div class="logo-text" style="margin-bottom:16px;font-size:20px;"><span>Intelexa</span> Technologies</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ds-course.html" style="color:var(--primary);">Data Science with GenAI</a></li>
+      <li><a href="#">Full Stack Software Testing</a></li>
+      <li><a href="#">DevOps Multi-Cloud</a></li>
+      <li><a href="#">New Batches</a></li>
+      <li><a href="#">Current Openings</a></li>
+      <li><a href="#">Recent Placements</a></li>
+      <li><a href="#">Reviews</a></li>
+      <li><a href="#">Blog &amp; Projects</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#enrol" style="color:var(--primary);font-weight:900;">Enroll Now →</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ════════════════════ BREADCRUMB ════════════════════ -->
+<div class="breadcrumb-wrap">
+  <div class="inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html"><i class="fas fa-home"></i>&nbsp;Home</a>
+      <i class="fas fa-chevron-right"></i>
+      <a href="#">All Courses</a>
+      <i class="fas fa-chevron-right"></i>
+      <span>Data Science with GenAI &amp; Agentic AI</span>
+    </nav>
+  </div>
+</div>
+
+<!-- ════════════════════ COURSE HERO ════════════════════ -->
+<header class="course-hero" id="enrol">
+  <div class="hero-inner">
+
+    <!-- LEFT — course info -->
+    <div class="hero-left">
+      <div class="course-badge"><i class="fas fa-award"></i>&nbsp;Most In-Demand Program &nbsp;·&nbsp; 2026</div>
+
+      <h1>Full Stack <span>Data Science</span> with<br>GenAI &amp; Agentic AI</h1>
+
+      <p class="course-description">
+        Master the complete Data Science career stack — beginning with Python programming fundamentals, progressing through advanced statistics, Machine Learning, and Deep Learning, then advancing into state-of-the-art Natural Language Processing, Computer Vision, Generative AI models, and production-ready Agentic AI systems. Every topic is reinforced with real-world business case studies, hands-on projects, and industry-grade tools, preparing you for immediate job readiness with 100% placement support across India, Canada, and the USA.
+      </p>
+
+      <div class="meta-row">
+        <div class="meta-pill"><i class="fas fa-user-graduate"></i><strong>Trainer:</strong>&nbsp;Y. Sri Ram | PhD | Data Science</div>
+        <div class="meta-pill"><i class="fas fa-clock"></i><strong>Duration:</strong>&nbsp;5–6 Months</div>
+        <div class="meta-pill"><i class="fas fa-layer-group"></i><strong>Level:</strong>&nbsp;Beginner → Advanced</div>
+        <div class="meta-pill"><i class="fas fa-laptop-code"></i><strong>Mode:</strong>&nbsp;Classroom / Online / Videos</div>
+      </div>
+
+      <div class="tag-row">
+        <span class="tag-pill">Python</span>
+        <span class="tag-pill">SQL &amp; BigQuery</span>
+        <span class="tag-pill">Machine Learning</span>
+        <span class="tag-pill">Deep Learning</span>
+        <span class="tag-pill">NLP</span>
+        <span class="tag-pill">Computer Vision</span>
+        <span class="tag-pill">Generative AI</span>
+        <span class="tag-pill">Agentic AI</span>
+        <span class="tag-pill">MLOps</span>
+        <span class="tag-pill">Tableau &amp; Excel</span>
+      </div>
+
+      <div class="hero-btns">
+        <button class="btn-hero-primary" onclick="scrollToEnrol()"><i class="fas fa-rocket"></i> Enroll for Free Demo</button>
+        <a href="#curriculum" class="btn-hero-outline"><i class="fas fa-list-ul"></i> View Full Curriculum</a>
+      </div>
+    </div>
+
+    <!-- RIGHT — enrol form -->
+    <div class="hero-right">
+      <div class="enrol-card" id="enrolCard">
+        <h3>🎓 Enroll for Free Demo</h3>
+        <p class="form-sub">Free counselling &amp; demo class — no commitment</p>
+        <div class="form-row">
+          <input type="text" id="f-name" placeholder="Your Full Name *" autocomplete="name">
+        </div>
+        <div class="form-row">
+          <input type="tel" id="f-phone" placeholder="Mobile Number *" autocomplete="tel">
+        </div>
+        <div class="form-row">
+          <input type="email" id="f-email" placeholder="Email Address *" autocomplete="email">
+        </div>
+        <div class="form-row">
+          <select id="f-mode">
+            <option value="">Select Training Mode</option>
+            <option>Classroom — Hyderabad</option>
+            <option>Live Online</option>
+            <option>Self-Paced Videos</option>
+            <option>Corporate Training</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <select id="f-level">
+            <option value="">Your Experience Level</option>
+            <option>Complete Beginner</option>
+            <option>Some Programming Background</option>
+            <option>Working Professional — Upskilling</option>
+          </select>
+        </div>
+        <button class="btn-form-submit" onclick="submitForm()">
+          <i class="fas fa-paper-plane"></i> Register for Free Demo
+        </button>
+        <p class="form-note"><i class="fas fa-shield-alt"></i> Your data is 100% safe — no spam, ever.</p>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<!-- ════════════════════ STATS BAR ════════════════════ -->
+<div class="stats-bar" aria-label="Quick stats">
+  <div class="stats-inner">
+    <div class="stat-item"><span class="stat-num">30K+</span><span class="stat-lbl">Students Trained</span></div>
+    <div class="stat-item"><span class="stat-num">20K+</span><span class="stat-lbl">Students Placed</span></div>
+    <div class="stat-item"><span class="stat-num">350K+</span><span class="stat-lbl">Placement Tie-ups</span></div>
+    <div class="stat-item"><span class="stat-num">365</span><span class="stat-lbl">Days Placement Support</span></div>
+    <div class="stat-item"><span class="stat-num">8</span><span class="stat-lbl">Business Case Studies</span></div>
+  </div>
+</div>
+
+<!-- ════════════════════ MAIN BODY ════════════════════ -->
+<div class="page-wrap">
+
+  <!-- ───── MAIN CONTENT ───── -->
+  <main class="content" role="main">
+
+    <!-- INSTRUCTOR -->
+    <section class="fade-up" style="margin-bottom:44px;" aria-labelledby="instructor-heading">
+      <div class="sec-hd">
+        <h2 id="instructor-heading">Your Instructor</h2>
+        <div class="sec-underline"></div>
+      </div>
+      <div class="instructor-banner" itemscope itemtype="https://schema.org/Person">
+        <div class="inst-avatar" aria-label="Instructor initials SR" role="img">SR</div>
+        <div class="inst-body">
+          <h3 itemprop="name">Y. Sri Ram</h3>
+          <div class="inst-cred">
+            <i class="fas fa-graduation-cap"></i> PhD in Data Science
+            &nbsp;|&nbsp;
+            <i class="fas fa-star"></i> 15+ Years Industry Experience
+          </div>
+          <p itemprop="description">
+            A seasoned data science practitioner and educator, Sri Ram brings deep real-world expertise from top MNC environments. His teaching philosophy blends rigorous conceptual depth with hands-on, production-grade application — every topic from probability theory to Agentic AI architectures is taught with live business context, interview-ready depth, and industry-standard code.
+          </p>
+          <div class="inst-tags">
+            <span class="inst-tag">✓ PhD &nbsp;·&nbsp; Data Science</span>
+            <span class="inst-tag">✓ ML &amp; AI Expert</span>
+            <span class="inst-tag">✓ Industry Practitioner</span>
+            <span class="inst-tag">✓ 30,000+ Students Mentored</span>
+            <span class="inst-tag">✓ Full Stack DS Author</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="fade-up" aria-labelledby="hl-heading">
+      <div class="sec-hd">
+        <h2 id="hl-heading">Course Highlights</h2>
+        <p>Everything you need to go from zero to job-ready data scientist</p>
+        <div class="sec-underline"></div>
+      </div>
+      <div class="highlights">
+        <div class="hl-card">
+          <div class="hl-icon"><i class="fab fa-python"></i></div>
+          <h5>Python to Advanced ML</h5>
+          <p>From print() to production models</p>
+        </div>
+        <div class="hl-card">
+          <div class="hl-icon"><i class="fas fa-database"></i></div>
+          <h5>SQL &amp; BigQuery</h5>
+          <p>Window functions, CTEs &amp; joins</p>
+        </div>
+        <div class="hl-card">
+          <div class="hl-icon"><i class="fas fa-chart-bar"></i></div>
+          <h5>Tableau &amp; Excel</h5>
+          <p>BI dashboards &amp; visual analytics</p>
+        </div>
+        <div class="hl-card">
+          <div class="hl-icon"><i class="fas fa-brain"></i></div>
+          <h5>Deep Learning &amp; NLP</h5>
+          <p>CNNs, RNNs, LSTMs, Transformers</p>
+        </div>
+        <div class="hl-card">
+          <div class="hl-icon"><i class="fas fa-robot"></i></div>
+          <h5>Generative &amp; Agentic AI</h5>
+          <p>GANs, VAEs, LLMs, RAG, AI Agents</p>
+        </div>
+        <div class="hl-card">
+          <div class="hl-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+          <h5>MLOps &amp; Deployment</h5>
+          <p>Docker, FastAPI, AWS/GCP CI/CD</p>
+        </div>
+        <div class="hl-card">
+          <div class="hl-icon"><i class="fas fa-briefcase"></i></div>
+          <h5>8 Business Case Studies</h5>
+          <p>Real problems across industries</p>
+        </div>
+        <div class="hl-card">
+          <div class="hl-icon"><i class="fas fa-handshake"></i></div>
+          <h5>365-Day Placement</h5>
+          <p>Resume prep, mock interviews &amp; drives</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRICULUM -->
+    <section id="curriculum" class="fade-up curriculum" aria-labelledby="curr-heading" style="margin-top:44px;">
+      <div class="sec-hd">
+        <h2 id="curr-heading">Complete Course Curriculum</h2>
+        <p>Deep-detailed topics across all 12 modules — from absolute beginner Python to cutting-edge Agentic AI systems, authored by Y. Sri Ram PhD</p>
+        <div class="sec-underline"></div>
+      </div>
+
+      <!-- MODULE 1 -->
+      <div class="module">
+        <div class="mod-head" onclick="toggleMod(this)" role="button" aria-expanded="true" tabindex="0">
+          <div class="mod-left">
+            <div class="mod-icon">1</div>
+            <div class="mod-texts">
+              <div class="mod-title-txt">Introduction to Programming — Python Foundations</div>
+              <div class="mod-sub">Python setup · Data Types · Operators · Control Flow · Loops · Functions · Lists · Strings</div>
+            </div>
+          </div>
+          <i class="fas fa-chevron-down chev"></i>
+        </div>
+        <div class="mod-body is-open">
+          <div class="sub-label">Introduction to Python</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>History &amp; features of Python</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Installing Python &amp; setting up environment</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Writing your first Python program (print)</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Comments in Python (#)</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Basic syntax &amp; indentation</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Running Python scripts</div>
+          </div>
+          <div class="sub-label">Data Types</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Primitive types: int, float, bool, str</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Type casting: int(), float(), str()</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>type() function &amp; NoneType</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Variables &amp; assignment</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Input from user: input()</div>
+          </div>
+          <div class="sub-label">Operators</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Arithmetic: +, -, *, /, //, %, **</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Comparison: ==, !=, &gt;, &lt;, &gt;=, &lt;=</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Logical: and, or, not</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Assignment: =, +=, -=, etc.</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Bitwise operators &amp; precedence</div>
+          </div>
+          <div class="sub-label">Control Statements &amp; Maths</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>if, else, elif — nested conditions</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Boolean logic &amp; indentation blocks</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Basic decision-making programs</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>math module: sqrt(), pow(), ceil(), floor()</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Modulo, absolute value, order of operations</div>
+          </div>
+          <div class="sub-label">Loops — While &amp; For</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>while loop syntax, infinite loops</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>break and continue</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Digit sum, factorials using loops</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>for loop with range()</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Nested for loops, looping in reverse</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>for vs while comparisons</div>
+          </div>
+          <div class="sub-label">Functions 1 &amp; 2</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Defining functions with def</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Parameters, arguments, return values</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Scope: local vs global variables</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Positional vs keyword arguments</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Default params, *args, **kwargs</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Recursion basics &amp; modular programming</div>
+          </div>
+          <div class="sub-label">Lists — 1D, Slicing &amp; 2D</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Creating &amp; accessing lists</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>append(), insert(), pop(), remove()</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>List slicing: list[start:stop:step]</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Negative indexing &amp; reversing</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>2D lists (nested lists), double indexing</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Row/column ops, transpose</div>
+          </div>
+          <div class="sub-label">Strings 1 &amp; 2</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>String declaration, indexing &amp; slicing</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>lower(), upper(), strip(), find(), replace()</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Immutability of strings</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>f-strings, format(), % formatting</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>split(), join(), string comparison</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Palindrome, anagram, frequency count</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 2 -->
+      <div class="module">
+        <div class="mod-head" onclick="toggleMod(this)" role="button" aria-expanded="false" tabindex="0">
+          <div class="mod-left">
+            <div class="mod-icon">2</div>
+            <div class="mod-texts">
+              <div class="mod-title-txt">Tableau, Excel &amp; Data Analytics Python Libraries</div>
+              <div class="mod-sub">NumPy · Pandas · Matplotlib · Seaborn · Tableau · Excel</div>
+            </div>
+          </div>
+          <i class="fas fa-chevron-down chev"></i>
+        </div>
+        <div class="mod-body">
+          <div class="sub-label">NumPy (Numerical Python)</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Introduction to NumPy &amp; arrays</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>np.array(), arange(), linspace()</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Array indexing &amp; slicing</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Element-wise addition &amp; multiplication</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>reshape(), sum(), mean(), max(), min()</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Broadcasting &amp; basic statistical functions</div>
+          </div>
+          <div class="sub-label">Pandas (Data Analysis Library)</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Series &amp; DataFrames</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>pd.Series(), pd.DataFrame(), read_csv()</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Indexing &amp; slicing</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>head(), tail(), info(), describe()</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Handling missing data: isnull(), dropna(), fillna()</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>groupby(), agg() — grouping &amp; aggregation</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Sorting &amp; merging DataFrames</div>
+          </div>
+          <div class="sub-label">Matplotlib</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Introduction to pyplot module</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Plotting line charts: plot()</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Titles, labels, legends</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Customizing axes &amp; ticks</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Bar charts &amp; pie charts</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Saving figures: savefig(); Subplots; Scatter plots</div>
+          </div>
+          <div class="sub-label">Seaborn</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Introduction to Seaborn</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>sns.lineplot(), barplot(), histplot(), boxplot()</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Heatmaps</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Pairplots &amp; correlation plots</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Styling &amp; themes</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Categorical plots: catplot(), countplot()</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 3 -->
+      <div class="module">
+        <div class="mod-head" onclick="toggleMod(this)" role="button" aria-expanded="false" tabindex="0">
+          <div class="mod-left">
+            <div class="mod-icon">3</div>
+            <div class="mod-texts">
+              <div class="mod-title-txt">SQL — Database Analytics &amp; BigQuery</div>
+              <div class="mod-sub">8 SQL lessons · Extraction · Filtering · Subqueries · Joins · Window Functions · CTEs · Date &amp; Time</div>
+            </div>
+          </div>
+          <i class="fas fa-chevron-down chev"></i>
+        </div>
+        <div class="mod-body">
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Intro to Databases &amp; BigQuery Setup</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>SQL-01: Extracting Data Using SQL</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>SQL-02: Functions, Filtering &amp; Subqueries</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>SQL-03: Joins</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>SQL-04: Advanced Joins</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>SQL-05: Window Functions</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>SQL-06: Date &amp; Time Functions &amp; CTEs</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>SQL-07: Window Functions — Part 2</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>SQL-08: Date &amp; Time and CTE — Advanced</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 4 -->
+      <div class="module">
+        <div class="mod-head" onclick="toggleMod(this)" role="button" aria-expanded="false" tabindex="0">
+          <div class="mod-left">
+            <div class="mod-icon">4</div>
+            <div class="mod-texts">
+              <div class="mod-title-txt">Probability &amp; Statistics for Data Science</div>
+              <div class="mod-sub">Probability · Bayes · Descriptive Stats · Distributions · Hypothesis Testing · Feature Engineering · Business Case Study 1</div>
+            </div>
+          </div>
+          <i class="fas fa-chevron-down chev"></i>
+        </div>
+        <div class="mod-body">
+          <div class="sub-label">Probability — Basic Definitions</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Sample space, events</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Types of events: mutually exclusive, exhaustive</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Classical, empirical &amp; axiomatic probability</div>
+          </div>
+          <div class="sub-label">Conditional Probability &amp; Bayes' Theorem</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Definition &amp; formula: P(A|B)</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Independent vs dependent events</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Bayes' rule derivation</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Prior, likelihood, posterior</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Real-world apps: medical diagnosis, spam filtering</div>
+          </div>
+          <div class="sub-label">Descriptive Statistics &amp; Distributions</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Mean, median, mode</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Range, variance, standard deviation</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Outliers &amp; skewness</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Boxplots &amp; histograms</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Gaussian distribution &amp; Z-scores</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Empirical rule (68-95-99.7)</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Central Limit Theorem (CLT)</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Confidence intervals &amp; margin of error</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Combinatorics: permutations, combinations, nCr, nPr</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Binomial &amp; Geometric distributions</div>
+          </div>
+          <div class="sub-label">Hypothesis Testing</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Null vs alternative hypothesis</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Type I &amp; II errors; p-values &amp; significance</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Z-test: one-sample &amp; two-sample</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>T-test: one-sample, two-sample, paired</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Chi-squared test: goodness-of-fit, independence</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>ANOVA: one-way, F-statistic</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Correlation test: Pearson &amp; Spearman</div>
+          </div>
+          <div class="sub-label">Feature Engineering (Basics)</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Handling missing data (imputation techniques)</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Encoding categorical variables: label, one-hot</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Scaling &amp; normalization</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Outlier detection &amp; treatment</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Feature transformation: log, sqrt</div>
+            <div class="topic"><i class="fas fa-check-circle" style="color:var(--accent);"></i><strong>Business Case Study-1: Probability &amp; Stats</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 5 -->
+      <div class="module">
+        <div class="mod-head" onclick="toggleMod(this)" role="button" aria-expanded="false" tabindex="0">
+          <div class="mod-left">
+            <div class="mod-icon">5</div>
+            <div class="mod-texts">
+              <div class="mod-title-txt">Maths for ML — Linear Algebra &amp; Optimization</div>
+              <div class="mod-sub">Vectors · Matrices · Gradient Descent · PCA · Linear/Logistic Regression · Classification Metrics</div>
+            </div>
+          </div>
+          <i class="fas fa-chevron-down chev"></i>
+        </div>
+        <div class="mod-body">
+          <div class="sub-label">Linear Algebra — The ML Context</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Vectors, matrices &amp; operations</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Matrix multiplication basics</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Role of linear algebra in ML models</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Dot products &amp; geometric meaning</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Hyperplanes in classification (SVMs)</div>
+          </div>
+          <div class="sub-label">Gradient Descent &amp; PCA</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Cost/loss functions</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Gradient computation</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Iterative optimization process</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Learning rate intuition</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>PCA: dimensionality reduction concept</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Variance &amp; eigenvectors; visualization 2D/3D</div>
+          </div>
+          <div class="sub-label">Intro to ML &amp; Regression</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Supervised vs Unsupervised learning</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Common ML applications &amp; terminologies</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Simple &amp; multiple linear regression</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Cost function (MSE), gradient descent</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Underfitting &amp; overfitting basics</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Polynomial regression intuition</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Bias vs Variance tradeoff</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>L1 (Lasso) &amp; L2 (Ridge) regularization</div>
+          </div>
+          <div class="sub-label">Logistic Regression &amp; Classification Metrics</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Sigmoid function</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Binary classification</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Cost function for classification</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Confusion matrix</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Accuracy, precision, recall, F1-score</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>ROC curve &amp; AUC (intro)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 6 -->
+      <div class="module">
+        <div class="mod-head" onclick="toggleMod(this)" role="button" aria-expanded="false" tabindex="0">
+          <div class="mod-left">
+            <div class="mod-icon">6</div>
+            <div class="mod-texts">
+              <div class="mod-title-txt">ML — Supervised Algorithms</div>
+              <div class="mod-sub">k-NN · Decision Trees 1&amp;2 · Random Forest · Boosting 1&amp;2 (AdaBoost, GBM, XGBoost, LightGBM) · Business Case Study 2</div>
+            </div>
+          </div>
+          <i class="fas fa-chevron-down chev"></i>
+        </div>
+        <div class="mod-body">
+          <div class="sub-label">ML: k Nearest Neighbours</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Distance metrics: Euclidean, Manhattan, Minkowski</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Weighted vs Unweighted k-NN</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Choosing optimal k using cross-validation</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Curse of Dimensionality</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>k-NN for classification vs regression</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Lazy learning &amp; prediction-time complexity</div>
+          </div>
+          <div class="sub-label">ML: Decision Trees 1 &amp; 2</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Structure of a Decision Tree</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Splitting criteria: Gini Impurity, Entropy (Information Gain)</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Binary vs Multiway splits</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Handling numerical vs categorical data</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Pre-pruning: max depth, min samples</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Post-pruning (cost complexity pruning)</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Tree visualization &amp; interpretability</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Feature importance from trees</div>
+          </div>
+          <div class="sub-label">ML: Bagging, Random Forest &amp; Boosting</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Bootstrap Aggregation (Bagging)</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Random Forest: bagging + feature sampling</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Out-of-Bag (OOB) error estimation</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Feature importance: Mean Decrease in Impurity/Accuracy</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Boosting: sequential weak learners</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>AdaBoost: weight updates, emphasis on hard examples</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>GBM: loss-based optimization</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Regularization in boosting: shrinkage, subsampling</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Early stopping &amp; learning rate tuning</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>XGBoost / LightGBM advanced libraries</div>
+            <div class="topic starred"><i class="fas fa-star"></i><strong>Business Case Study-2: Supervised Algorithms</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 7 -->
+      <div class="module">
+        <div class="mod-head" onclick="toggleMod(this)" role="button" aria-expanded="false" tabindex="0">
+          <div class="mod-left">
+            <div class="mod-icon">7</div>
+            <div class="mod-texts">
+              <div class="mod-title-txt">Unsupervised Learning</div>
+              <div class="mod-sub">KMeans · KMeans++ · Hierarchical Clustering · GMM · Anomaly Detection · PCA / T-SNE / UMAP · Business Case Study 3</div>
+            </div>
+          </div>
+          <i class="fas fa-chevron-down chev"></i>
+        </div>
+        <div class="mod-body">
+          <div class="sub-label">KMeans &amp; KMeans++</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Supervised vs Unsupervised Learning</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Clustering: What &amp; Why</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>KMeans algorithm: assignment-update loop</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Limitations of KMeans (initialization, # clusters)</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Cluster evaluation: Inertia, Elbow Method, Silhouette Score</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>KMeans++: distance-based smart seeding</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Effect on convergence &amp; stability</div>
+          </div>
+          <div class="sub-label">Hierarchical Clustering &amp; GMM</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Agglomerative vs Divisive approaches</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Linkage: Single, Complete, Average</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Dendrogram construction &amp; interpretation</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Cutting the tree for cluster selection</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Gaussian Mixture Models: soft clustering with probabilities</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Multivariate Gaussian Distribution</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Expectation-Maximization (EM) algorithm</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>GMM vs KMeans: flexibility &amp; shape handling</div>
+          </div>
+          <div class="sub-label">Anomaly Detection &amp; High-Dimensional Visualization</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Types of Anomalies: Point, Contextual, Collective</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Z-score, IQR &amp; distance-based detection</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Isolation Forest</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>One-Class SVM</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Practical examples: fraud, system monitoring</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>PCA: linear dimensionality reduction, Scree Plot</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>T-SNE: non-linear, local structure, perplexity</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>UMAP: non-linear, faster &amp; more scalable than T-SNE</div>
+            <div class="topic starred"><i class="fas fa-star"></i><strong>Business Case Study-3: Unsupervised Algorithms</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 8 -->
+      <div class="module">
+        <div class="mod-head" onclick="toggleMod(this)" role="button" aria-expanded="false" tabindex="0">
+          <div class="mod-left">
+            <div class="mod-icon">8</div>
+            <div class="mod-texts">
+              <div class="mod-title-txt">MLOps — Model Deployment &amp; CI/CD</div>
+              <div class="mod-sub">MLflow · Docker · FastAPI/Flask · AWS/GCP · GitHub Actions · Monitoring · Business Case Study 4</div>
+            </div>
+          </div>
+          <i class="fas fa-chevron-down chev"></i>
+        </div>
+        <div class="mod-body">
+          <div class="sub-label">MLOps Overview</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>What is MLOps?</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Lifecycle: Model Development → Deployment → Monitoring</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Challenges in Scaling ML</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Tools: MLflow, Kubeflow, Airflow</div>
+          </div>
+          <div class="sub-label">Model Deployment</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Packaging models (Pickle)</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>REST APIs with FastAPI / Flask</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Containerization (Docker Basics)</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Deployment targets: Cloud (AWS/GCP)</div>
+          </div>
+          <div class="sub-label">CI/CD in ML</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>CI: Automating Tests &amp; Code Quality</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>CD: Automated Model Deployment</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>GitHub Actions for ML</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Monitoring &amp; Retraining Pipelines</div>
+            <div class="topic starred"><i class="fas fa-star"></i><strong>Business Case Study-4: TS &amp; RecSys</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 9 -->
+      <div class="module">
+        <div class="mod-head" onclick="toggleMod(this)" role="button" aria-expanded="false" tabindex="0">
+          <div class="mod-left">
+            <div class="mod-icon">9</div>
+            <div class="mod-texts">
+              <div class="mod-title-txt">Neural Networks (NN) — Deep Learning</div>
+              <div class="mod-sub">Feedforward NN · Backpropagation · CNNs · RNNs · LSTMs · Business Case Study 5</div>
+            </div>
+          </div>
+          <i class="fas fa-chevron-down chev"></i>
+        </div>
+        <div class="mod-body">
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Introduction to Neural Networks</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>What is a Neural Network?</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Basic Components: Neurons, Layers, Weights</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Feedforward NN: Input, Hidden, Output Layers</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Forward Pass</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>How error is calculated (Backpropagation)</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Gradient descent for weight update</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>CNN: purpose in image tasks</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>CNN: convolutional layers &amp; pooling</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>RNN: use cases for sequential data</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Simple RNN vs Long Short-Term Memory (LSTM)</div>
+            <div class="topic starred"><i class="fas fa-star"></i><strong>Business Case Study-5: Neural Networks</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 10 -->
+      <div class="module">
+        <div class="mod-head" onclick="toggleMod(this)" role="button" aria-expanded="false" tabindex="0">
+          <div class="mod-left">
+            <div class="mod-icon">10</div>
+            <div class="mod-texts">
+              <div class="mod-title-txt">Computer Vision (CV)</div>
+              <div class="mod-sub">Image Processing · CNN Architecture · Object Detection · Image Classification · Segmentation · Feature Extraction · Business Case Study 6</div>
+            </div>
+          </div>
+          <i class="fas fa-chevron-down chev"></i>
+        </div>
+        <div class="mod-body">
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Image Representation: Pixels, RGB</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Filters &amp; Edge Detection</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>CNN architecture for images</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Convolution, Pooling, Fully Connected Layers</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Detecting objects within an image</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Bounding boxes &amp; labels</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Classifying images into categories</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Basic CNN for classification</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Dividing images into meaningful parts</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Semantic vs Instance Segmentation</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Feature Extraction: edges, corners</div>
+            <div class="topic starred"><i class="fas fa-star"></i><strong>Business Case Study-6: Computer Vision</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 11 -->
+      <div class="module">
+        <div class="mod-head" onclick="toggleMod(this)" role="button" aria-expanded="false" tabindex="0">
+          <div class="mod-left">
+            <div class="mod-icon">11</div>
+            <div class="mod-texts">
+              <div class="mod-title-txt">Natural Language Processing (NLP)</div>
+              <div class="mod-sub">Text Preprocessing · TF-IDF · Word2Vec · Sequence Models · Transformer (BERT/GPT) · Sentiment Analysis · Business Case Study 7</div>
+            </div>
+          </div>
+          <i class="fas fa-chevron-down chev"></i>
+        </div>
+        <div class="mod-body">
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>Tokenization, Stopwords, Lemmatization</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Text normalization</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Bag of Words &amp; TF-IDF</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Representing text as vectors</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Word frequency &amp; importance</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Word Embeddings (Word2Vec)</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Representing words as vectors</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Concept of word similarity</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Sequence Models — RNNs: understanding sequences</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>LSTM: handling long-term dependencies</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Transformer Models (BERT, GPT) — architecture basics</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Pre-trained models for NLP tasks</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Text Classification &amp; Sentiment Analysis</div>
+            <div class="topic starred"><i class="fas fa-star"></i><strong>Business Case Study-7: NLP</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 12 -->
+      <div class="module">
+        <div class="mod-head" onclick="toggleMod(this)" role="button" aria-expanded="false" tabindex="0">
+          <div class="mod-left">
+            <div class="mod-icon" style="background:linear-gradient(135deg,var(--primary),var(--accent));">12</div>
+            <div class="mod-texts">
+              <div class="mod-title-txt">Generative AI &amp; Agentic AI</div>
+              <div class="mod-sub">GANs · VAEs · Text-to-Image · LLMs · RAG · Fine-Tuning · LoRA · QLoRA · Agentic AI · AI Agents Architecture · Business Case Study 8</div>
+            </div>
+          </div>
+          <i class="fas fa-chevron-down chev"></i>
+        </div>
+        <div class="mod-body">
+          <div class="sub-label">Introduction to Generative AI</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>What is Generative AI?</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Applications: Image, Text, Music</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Generative Models Overview: GANs, VAEs, etc.</div>
+          </div>
+          <div class="sub-label">GANs, VAEs &amp; Text-to-Image</div>
+          <div class="topics">
+            <div class="topic"><i class="fas fa-check-circle"></i>GANs Overview</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Generator &amp; Discriminator</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Adversarial training</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>VAEs: latent space, sampling &amp; reconstruction</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Text-to-Image mapping</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Model examples: DALL-E, CLIP</div>
+            <div class="topic"><i class="fas fa-check-circle"></i>Applications: image generation, text generation</div>
+          </div>
+          <div class="sub-label" style="color:var(--accent);border-color:rgba(245,166,35,0.3);">⭐ Extra Advanced Topics (Bonus)</div>
+          <div class="topics">
+            <div class="topic starred"><i class="fas fa-star"></i>1. Introduction to Generative AI (Deep Dive)</div>
+            <div class="topic starred"><i class="fas fa-star"></i>2. Large Language Models (LLMs)</div>
+            <div class="topic starred"><i class="fas fa-star"></i>3. Embeddings &amp; Vector Databases</div>
+            <div class="topic starred"><i class="fas fa-star"></i>4. Retrieval-Augmented Generation (RAG)</div>
+            <div class="topic starred"><i class="fas fa-star"></i>5. Fine-Tuning of LLMs</div>
+            <div class="topic starred"><i class="fas fa-star"></i>6. LoRA (Low-Rank Adaptation)</div>
+            <div class="topic starred"><i class="fas fa-star"></i>7. QLoRA (Quantized LoRA)</div>
+            <div class="topic starred"><i class="fas fa-star"></i>8. Agentic AI Fundamentals</div>
+            <div class="topic starred"><i class="fas fa-star"></i>9. AI Agents Architecture</div>
+            <div class="topic starred"><i class="fas fa-star"></i><strong>Business Case Study-8: GenAI</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EXPAND / COLLAPSE ALL -->
+      <div style="text-align:center;">
+        <button class="expand-btn" id="expandBtn" onclick="toggleAll()">
+          <i class="fas fa-expand-alt" id="expandIcon"></i>
+          <span id="expandTxt">Expand All Modules</span>
+        </button>
+      </div>
+
+    </section><!-- /curriculum -->
+
+    <!-- TOOLS & TECHNOLOGIES -->
+    <section class="tools-section fade-up" aria-labelledby="tools-heading">
+      <div class="sec-hd">
+        <h2 id="tools-heading">Tools &amp; Technologies You'll Master</h2>
+        <p>Industry-standard stack used throughout the program</p>
+        <div class="sec-underline"></div>
+      </div>
+      <div class="tools-grid">
+        <div class="tool-chip"><i class="fab fa-python"></i> Python</div>
+        <div class="tool-chip"><i class="fas fa-database"></i> SQL / BigQuery</div>
+        <div class="tool-chip"><i class="fas fa-th"></i> NumPy</div>
+        <div class="tool-chip"><i class="fas fa-table"></i> Pandas</div>
+        <div class="tool-chip"><i class="fas fa-chart-line"></i> Matplotlib</div>
+        <div class="tool-chip"><i class="fas fa-chart-bar"></i> Seaborn</div>
+        <div class="tool-chip"><i class="fas fa-chart-pie"></i> Tableau</div>
+        <div class="tool-chip"><i class="fas fa-file-excel"></i> Excel</div>
+        <div class="tool-chip"><i class="fas fa-brain"></i> Scikit-learn</div>
+        <div class="tool-chip"><i class="fas fa-fire"></i> TensorFlow</div>
+        <div class="tool-chip"><i class="fas fa-bolt"></i> PyTorch</div>
+        <div class="tool-chip"><i class="fas fa-robot"></i> OpenAI / GPT</div>
+        <div class="tool-chip"><i class="fas fa-link"></i> LangChain</div>
+        <div class="tool-chip"><i class="fas fa-vector-square"></i> FAISS / Pinecone</div>
+        <div class="tool-chip"><i class="fab fa-docker"></i> Docker</div>
+        <div class="tool-chip"><i class="fab fa-aws"></i> AWS / GCP</div>
+        <div class="tool-chip"><i class="fab fa-github"></i> GitHub Actions</div>
+        <div class="tool-chip"><i class="fas fa-plug"></i> FastAPI / Flask</div>
+        <div class="tool-chip"><i class="fas fa-cogs"></i> MLflow</div>
+        <div class="tool-chip"><i class="fas fa-book-open"></i> Jupyter / Colab</div>
+      </div>
+    </section>
+
+  </main>
+  <!-- ───── END CONTENT ───── -->
+
+  <!-- ───── SIDEBAR ───── -->
+  <aside class="sidebar" aria-label="Course sidebar">
+
+    <!-- Enrol CTA -->
+    <div class="sb-card">
+      <h4>🚀 Start Your Journey</h4>
+      <button class="btn-sb-enrol" onclick="scrollToEnrol()">Enroll for Free Demo</button>
+      <button class="btn-sb-demo"  onclick="scrollToEnrol()">Talk to a Counsellor</button>
+    </div>
+
+    <!-- Course Quick Info -->
+    <div class="sb-card">
+      <h4>📋 Course Details</h4>
+      <div class="sb-row"><i class="fas fa-clock"></i><div><strong>Duration</strong><span>5–6 Months</span></div></div>
+      <div class="sb-row"><i class="fas fa-layer-group"></i><div><strong>Level</strong><span>Beginner to Advanced</span></div></div>
+      <div class="sb-row"><i class="fas fa-graduation-cap"></i><div><strong>Instructor</strong><span>Y. Sri Ram | PhD</span></div></div>
+      <div class="sb-row"><i class="fas fa-laptop"></i><div><strong>Mode</strong><span>Classroom / Online / Videos</span></div></div>
+      <div class="sb-row"><i class="fas fa-language"></i><div><strong>Language</strong><span>English / Telugu</span></div></div>
+      <div class="sb-row"><i class="fas fa-certificate"></i><div><strong>Certificate</strong><span>Industry-Recognised</span></div></div>
+      <div class="sb-row"><i class="fas fa-briefcase"></i><div><strong>Placement</strong><span>365-Day Full Support</span></div></div>
+      <div class="sb-row"><i class="fas fa-project-diagram"></i><div><strong>Projects</strong><span>8 Business Case Studies</span></div></div>
+      <div class="sb-row"><i class="fas fa-map-marker-alt"></i><div><strong>Centres</strong><span>Hyderabad · Canada · USA</span></div></div>
+    </div>
+
+    <!-- What You'll Learn -->
+    <div class="sb-card">
+      <h4>✅ What You'll Learn</h4>
+      <ul class="learn-list">
+        <li><i class="fas fa-check-circle"></i>Python from scratch to advanced OOP</li>
+        <li><i class="fas fa-check-circle"></i>Statistics, probability &amp; feature engineering</li>
+        <li><i class="fas fa-check-circle"></i>SQL, Tableau, Excel &amp; data visualisation</li>
+        <li><i class="fas fa-check-circle"></i>Supervised &amp; unsupervised ML algorithms</li>
+        <li><i class="fas fa-check-circle"></i>Deep Learning: CNNs, RNNs &amp; LSTMs</li>
+        <li><i class="fas fa-check-circle"></i>NLP — text to transformer models</li>
+        <li><i class="fas fa-check-circle"></i>Computer Vision &amp; image segmentation</li>
+        <li><i class="fas fa-check-circle"></i>Generative AI: GANs, VAEs &amp; LLMs</li>
+        <li><i class="fas fa-check-circle"></i>RAG pipelines &amp; fine-tuning LLMs</li>
+        <li><i class="fas fa-check-circle"></i>Agentic AI fundamentals &amp; architecture</li>
+        <li><i class="fas fa-check-circle"></i>MLOps: Docker, FastAPI, AWS/GCP</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="sb-card">
+      <h4>📞 Have Questions?</h4>
+      <a href="tel:+919642367632" style="display:flex;align-items:center;gap:10px;font-weight:800;color:var(--secondary);font-size:15px;margin-bottom:12px;">
+        <i class="fas fa-phone" style="color:var(--primary);width:17px;"></i>+91 9642 367632
+      </a>
+      <a href="tel:+12899014184" style="display:flex;align-items:center;gap:10px;font-weight:700;color:var(--text-light);font-size:13.5px;margin-bottom:14px;">
+        <i class="fas fa-phone" style="color:var(--primary);width:17px;"></i>+1 289 901 4184 (Canada)
+      </a>
+      <a href="https://wa.me/919642367632" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:10px;font-weight:800;color:#25d366;font-size:14px;">
+        <i class="fab fa-whatsapp" style="font-size:20px;"></i>WhatsApp Chat
+      </a>
+    </div>
+
+  </aside>
+  <!-- ───── END SIDEBAR ───── -->
+
+</div><!-- /page-wrap -->
+
+<!-- ════════════════════ CTA BAND ════════════════════ -->
+<section class="cta-band fade-up" aria-label="Call to action">
+  <h2>100% Placement Assistance</h2>
+  <p>We offer flexible and cost-effective training with guaranteed placement support</p>
+  <p style="font-size:18px;font-weight:800;color:var(--accent);margin-bottom:28px;">365 Days Placement Support &amp; Quality Training</p>
+  <p style="font-weight:700;margin-bottom:24px;opacity:.9;">Don't waste time!! Enroll Now and start your bright future!</p>
+  <div class="cta-btns">
+    <a href="tel:+919642367632" class="btn-p"><i class="fas fa-phone"></i> +91 9393 0808 05</a>
+    <button class="btn-o" onclick="scrollToEnrol()">Enroll for Free Demo</button>
+  </div>
+</section>
+
+<!-- ════════════════════ FOOTER ════════════════════ -->
+<footer role="contentinfo">
+  <div class="footer-grid">
+    <div class="fc">
+      <div class="logo-text" style="color:#fff;margin-bottom:14px;font-size:22px;"><span style="color:var(--primary);">Intelexa</span> Technologies</div>
+      <p>Intelexa Technologies was established by a team of enthusiastic industry professionals with the vision of providing IT training to fill the gap between industry requirement and learning.</p>
+      <div class="socials" aria-label="Social media links">
+        <a href="https://in.linkedin.com/company/Intelexatech" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/Intelexatech"       target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/Intelexatech"        target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/Intelexatech/"     target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/Intelexatech"            target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="fc">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#">All Courses</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Placements</a></li>
+        <li><a href="#">Trainees Succeeded</a></li>
+        <li><a href="#">Trainees Placed In</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h5>Courses</h5>
+      <ul>
+        <li><a href="ds-course.html">Data Science with GenAI</a></li>
+        <li><a href="#">Full Stack Testing with AI</a></li>
+        <li><a href="#">DevOps Multi-Cloud with AI</a></li>
+        <li><a href="#">Azure Data Engineer</a></li>
+        <li><a href="#">Java Full Stack with AI</a></li>
+        <li><a href="#">Python Full Stack with AI</a></li>
+        <li><a href="#">Playwright Automation</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h5>Discover</h5>
+      <ul>
+        <li><a href="#">Intelexa Projects</a></li>
+        <li><a href="#">Download Links</a></li>
+        <li><a href="#">Sample Resumes</a></li>
+        <li><a href="#">Intelexa Blog</a></li>
+        <li><a href="#">Video Tutorials</a></li>
+        <li><a href="#">Job Updates</a></li>
+        <li><a href="#">Q &amp; A</a></li>
+      </ul>
+    </div>
+    <div class="fc fc-contact">
+      <h5>Contact Us</h5>
+      <a href="tel:+919393080805"><i class="fas fa-phone" style="color:var(--accent);"></i>+91 93 93 08 08 05</a>
+      <a href="tel:+12899014184"><i class="fas fa-phone" style="color:var(--accent);"></i>+1 289 901 4184</a>
+      <a href="mailto:info@intelexatech.com"><i class="fas fa-envelope" style="color:var(--accent);"></i>info@intelexatech.com</a>
+      <a href="#"><i class="fas fa-map-marker-alt" style="color:var(--accent);"></i>Ameerpet, Hyderabad</a>
+      <a href="#"><i class="fas fa-map-marker-alt" style="color:var(--accent);"></i>Toronto, Canada</a>
+      <a href="#"><i class="fas fa-map-marker-alt" style="color:var(--accent);"></i>Dallas, US</a>
+      <a href="https://wa.me/919642367632" style="color:#25d366;margin-top:10px;font-weight:700;" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp" style="font-size:16px;"></i>&nbsp;WhatsApp Chat
+      </a>
+    </div>
+  </div>
+  <div class="footer-bot">
+    <span>Copyright &copy; 2026 Intelexa Technologies. All Rights Reserved.</span>
+    <div style="display:flex;gap:16px;">
+      <a href="#">Terms &amp; Conditions</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/919642367632" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- ════════════════════ JAVASCRIPT ════════════════════ -->
+<script>
+/* ── Scroll progress bar ── */
+window.addEventListener('scroll', () => {
+  const pct = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+  document.getElementById('scroll-prog').style.width = Math.min(pct, 100) + '%';
+});
+
+/* ── Accordion — one open at a time ── */
+function toggleMod(head) {
+  const body    = head.nextElementSibling;
+  const isOpen  = body.classList.contains('is-open');
+
+  // close all
+  document.querySelectorAll('.mod-body').forEach(b => b.classList.remove('is-open'));
+  document.querySelectorAll('.mod-head').forEach(h => {
+    h.classList.remove('is-open');
+    h.setAttribute('aria-expanded','false');
+  });
+
+  if (!isOpen) {
+    body.classList.add('is-open');
+    head.classList.add('is-open');
+    head.setAttribute('aria-expanded','true');
+    // smooth scroll to it after a tick
+    setTimeout(() => body.scrollIntoView({ behavior:'smooth', block:'nearest' }), 100);
+  }
+}
+
+/* keyboard accessibility for accordion */
+document.querySelectorAll('.mod-head').forEach(h => {
+  h.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleMod(h); }
+  });
+});
+
+/* ── Expand / Collapse All ── */
+let allExpanded = false;
+function toggleAll() {
+  allExpanded = !allExpanded;
+  document.querySelectorAll('.mod-body').forEach(b =>
+    allExpanded ? b.classList.add('is-open') : b.classList.remove('is-open')
+  );
+  document.querySelectorAll('.mod-head').forEach(h => {
+    allExpanded ? h.classList.add('is-open') : h.classList.remove('is-open');
+    h.setAttribute('aria-expanded', allExpanded);
+  });
+  document.getElementById('expandTxt').textContent = allExpanded ? 'Collapse All Modules' : 'Expand All Modules';
+  document.getElementById('expandIcon').className  = allExpanded ? 'fas fa-compress-alt' : 'fas fa-expand-alt';
+}
+
+/* ── Scroll-fade animation ── */
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.07 });
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+
+/* ── Mobile nav ── */
+function openMob()  {
+  document.getElementById('mobNav').classList.add('open');
+  document.querySelector('.hamburger').setAttribute('aria-expanded','true');
+}
+function closeMob() {
+  document.getElementById('mobNav').classList.remove('open');
+  document.querySelector('.hamburger').setAttribute('aria-expanded','false');
+}
+function closeMobOutside(e) { if (e.target === document.getElementById('mobNav')) closeMob(); }
+
+/* ── Scroll to enrol form ── */
+function scrollToEnrol() {
+  const card = document.getElementById('enrolCard') || document.getElementById('enrol');
+  if (card) card.scrollIntoView({ behavior:'smooth', block:'center' });
+}
+
+/* ── Form submit ── */
+function submitForm() {
+  const name  = document.getElementById('f-name').value.trim();
+  const phone = document.getElementById('f-phone').value.trim();
+  const email = document.getElementById('f-email').value.trim();
+  if (!name || !phone || !email) {
+    alert('Please fill in your name, phone number, and email address to continue.');
+    return;
+  }
+  const btn = document.querySelector('.btn-form-submit');
+  btn.innerHTML = '<i class="fas fa-check"></i> Thank You! We\'ll Call You Shortly';
+  btn.style.background = '#2ecc71';
+  btn.disabled = true;
+}
+
+/* ── Smooth scroll for anchor links ── */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) { e.preventDefault(); t.scrollIntoView({ behavior:'smooth' }); }
+  });
+});
+
+/* ── Open Module 1 by default on load ── */
+window.addEventListener('DOMContentLoaded', () => {
+  const firstHead = document.querySelector('.mod-head');
+  if (firstHead) {
+    firstHead.nextElementSibling.classList.add('is-open');
+    firstHead.classList.add('is-open');
+    firstHead.setAttribute('aria-expanded','true');
+  }
+});
+</script>
+</body>
+</html>
