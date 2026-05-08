@@ -1,1055 +1,2105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Intelexa Technologies | Best IT Software Training & Placements India</title>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<style>
-  :root {
-    --primary: #e8381a;
-    --primary-dark: #c42d10;
-    --secondary: #1a2a4a;
-    --accent: #f5a623;
-    --light-bg: #f8f9fc;
-    --text: #333;
-    --text-light: #666;
-    --white: #fff;
-    --border: #e0e0e0;
-    --shadow: 0 4px 24px rgba(0,0,0,0.08);
-  }
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family:'Nunito',sans-serif; color:var(--text); overflow-x:hidden; }
-  a { text-decoration:none; color:inherit; }
-  img { max-width:100%; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intelexa Technologies | Best IT Software Training & Placements India</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #e8381a;
+      --primary-dark: #c42d10;
+      --secondary: #1a2a4a;
+      --accent: #f5a623;
+      --light-bg: #f8f9fc;
+      --text: #333;
+      --text-light: #666;
+      --white: #fff;
+      --border: #e0e0e0;
+      --shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
 
-  /* TOP BAR */
-  .topbar {
-    background:var(--secondary);
-    color:#fff;
-    font-size:13px;
-    padding:6px 0;
-  }
-  .topbar .container {
-    max-width:1200px; margin:auto; padding:0 20px;
-    display:flex; flex-wrap:wrap; gap:20px; align-items:center; justify-content:space-between;
-  }
-  .topbar a { color:#ccc; }
-  .topbar span { color:var(--accent); font-weight:700; }
-  .topbar-item { display:flex; align-items:center; gap:6px; }
-  .topbar-item i { color:var(--accent); }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  /* NAVBAR */
-  nav {
-    background:#fff;
-    box-shadow:0 2px 12px rgba(0,0,0,0.1);
-    position:sticky; top:0; z-index:1000;
-  }
-  .nav-container {
-    max-width:1200px; margin:auto; padding:0 20px;
-    display:flex; align-items:center; justify-content:space-between;
-    height:70px;
-  }
-  .logo img { height:50px; }
-  .logo-text { font-size:24px; font-weight:900; color:var(--secondary); }
-  .logo-text span { color:var(--primary); }
-  .nav-links { display:flex; align-items:center; gap:4px; list-style:none; }
-  .nav-links > li { position:relative; }
-  .nav-links > li > a {
-    padding:8px 14px; font-weight:700; font-size:14px; color:var(--secondary);
-    display:flex; align-items:center; gap:4px; border-radius:4px;
-    transition:color .2s, background .2s;
-  }
-  .nav-links > li > a:hover { color:var(--primary); background:rgba(232,56,26,0.05); }
-  .dropdown {
-    position:absolute; top:100%; left:0;
-    background:#fff; min-width:240px;
-    box-shadow:0 8px 30px rgba(0,0,0,0.15);
-    border-top:3px solid var(--primary);
-    border-radius:0 0 8px 8px;
-    opacity:0; visibility:hidden;
-    transform:translateY(8px);
-    transition:.2s;
-    z-index:100;
-  }
-  .nav-links > li:hover .dropdown { opacity:1; visibility:visible; transform:translateY(0); }
-  .dropdown a {
-    display:block; padding:10px 18px;
-    font-size:13px; font-weight:600; color:var(--text);
-    border-bottom:1px solid #f0f0f0;
-    transition:background .2s, color .2s;
-  }
-  .dropdown a:hover { background:var(--light-bg); color:var(--primary); }
-  .btn-enroll {
-    background:var(--primary); color:#fff !important;
-    padding:10px 22px !important; border-radius:30px !important;
-    font-weight:800 !important; font-size:14px !important;
-    transition:background .2s, transform .1s !important;
-  }
-  .btn-enroll:hover { background:var(--primary-dark) !important; transform:scale(1.03); }
-  .hamburger { display:none; font-size:24px; cursor:pointer; color:var(--secondary); }
+    body {
+      font-family: 'Nunito', sans-serif;
+      color: var(--text);
+      overflow-x: hidden;
+    }
 
-  /* HERO */
-  .hero {
-    background: linear-gradient(135deg, var(--secondary) 0%, #0d1f3c 60%, #1a3566 100%);
-    color:#fff; padding:70px 20px;
-    position:relative; overflow:hidden;
-  }
-  .hero::before {
-    content:''; position:absolute; inset:0;
-    background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  }
-  .hero-container {
-    max-width:1200px; margin:auto;
-    display:flex; align-items:center; gap:60px; flex-wrap:wrap;
-  }
-  .hero-text { flex:1; min-width:300px; position:relative; z-index:1; }
-  .hero-badge {
-    display:inline-block; background:var(--primary); color:#fff;
-    padding:4px 16px; border-radius:30px; font-size:13px; font-weight:700;
-    margin-bottom:16px; letter-spacing:.5px;
-  }
-  .hero-text h1 {
-    font-size:clamp(28px,4vw,48px); font-weight:900; line-height:1.2;
-    margin-bottom:16px;
-  }
-  .hero-text h1 span { color:var(--accent); }
-  .hero-text p { font-size:16px; color:rgba(255,255,255,0.8); line-height:1.7; margin-bottom:28px; }
-  .hero-tags { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:30px; }
-  .hero-tag {
-    background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2);
-    color:#fff; padding:6px 14px; border-radius:20px; font-size:13px; font-weight:600;
-  }
-  .hero-btns { display:flex; gap:14px; flex-wrap:wrap; }
-  .btn-primary {
-    background:var(--primary); color:#fff;
-    padding:14px 30px; border-radius:30px;
-    font-weight:800; font-size:15px;
-    transition:.2s; border:none; cursor:pointer;
-    display:inline-block;
-  }
-  .btn-primary:hover { background:var(--primary-dark); transform:translateY(-2px); box-shadow:0 6px 20px rgba(232,56,26,0.4); }
-  .btn-outline {
-    background:transparent; color:#fff;
-    padding:14px 30px; border-radius:30px;
-    font-weight:800; font-size:15px;
-    border:2px solid rgba(255,255,255,0.5);
-    transition:.2s; cursor:pointer; display:inline-block;
-  }
-  .btn-outline:hover { border-color:#fff; background:rgba(255,255,255,0.1); }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-  /* HERO FORM */
-  .hero-form-wrap { flex:0 0 340px; position:relative; z-index:1; }
-  .hero-form {
-    background:#fff; border-radius:16px; padding:30px;
-    box-shadow:0 20px 60px rgba(0,0,0,0.3);
-  }
-  .hero-form h3 { color:var(--secondary); font-size:18px; font-weight:800; margin-bottom:20px; text-align:center; }
-  .form-group { margin-bottom:14px; }
-  .form-group input,
-  .form-group select {
-    width:100%; padding:11px 14px;
-    border:1.5px solid var(--border); border-radius:8px;
-    font-size:14px; font-family:'Nunito',sans-serif;
-    color:var(--text);
-    transition:border-color .2s;
-    -webkit-appearance:none;
-  }
-  .form-group input:focus,
-  .form-group select:focus { outline:none; border-color:var(--primary); }
-  .form-submit {
-    width:100%; padding:13px;
-    background:var(--primary); color:#fff;
-    border:none; border-radius:8px;
-    font-size:15px; font-weight:800;
-    cursor:pointer; font-family:'Nunito',sans-serif;
-    transition:.2s;
-  }
-  .form-submit:hover { background:var(--primary-dark); }
+    img {
+      max-width: 100%;
+    }
 
-  /* STATS BAR */
-  .stats-bar {
-    background:var(--primary);
-    padding:20px 0;
-  }
-  .stats-container {
-    max-width:1200px; margin:auto; padding:0 20px;
-    display:flex; flex-wrap:wrap; justify-content:space-around; gap:16px;
-  }
-  .stat-item { text-align:center; color:#fff; }
-  .stat-num { font-size:clamp(26px,4vw,36px); font-weight:900; display:block; }
-  .stat-label { font-size:13px; opacity:.85; font-weight:600; }
+    /* TOP BAR */
+    .topbar {
+      background: var(--secondary);
+      color: #fff;
+      font-size: 13px;
+      padding: 6px 0;
+    }
 
-  /* SECTION COMMONS */
-  .section { padding:70px 20px; }
-  .section-alt { background:var(--light-bg); }
-  .container { max-width:1200px; margin:auto; }
-  .section-header { text-align:center; margin-bottom:48px; }
-  .section-header h2 { font-size:clamp(24px,3vw,36px); font-weight:900; color:var(--secondary); margin-bottom:12px; }
-  .section-header p { color:var(--text-light); font-size:16px; max-width:600px; margin:auto; }
-  .section-header .underline {
-    width:60px; height:4px; background:var(--primary);
-    border-radius:2px; margin:14px auto 0;
-  }
+    .topbar .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-  /* COURSES GRID */
-  .courses-grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
-    gap:20px;
-  }
-  .course-card {
-    background:#fff; border-radius:12px;
-    box-shadow:var(--shadow); overflow:hidden;
-    transition:.25s; cursor:pointer;
-    border:1px solid transparent;
-    text-align:center; padding:24px 16px;
-  }
-  .course-card:hover {
-    border-color:var(--primary);
-    transform:translateY(-4px);
-    box-shadow:0 12px 40px rgba(0,0,0,0.12);
-  }
-  .course-icon {
-    width:64px; height:64px; border-radius:50%;
-    background:linear-gradient(135deg, var(--primary), #ff6b4a);
-    display:flex; align-items:center; justify-content:center;
-    margin:0 auto 14px;
-    font-size:26px; color:#fff;
-  }
-  .course-card h4 { font-size:14px; font-weight:700; color:var(--secondary); line-height:1.4; }
-  .course-cat {
-    display:inline-block; background:rgba(232,56,26,0.1); color:var(--primary);
-    padding:3px 10px; border-radius:20px; font-size:11px; font-weight:700;
-    margin-top:8px;
-  }
+    .topbar a {
+      color: #ccc;
+    }
 
-  /* SCHEDULE TABLE */
-  .table-wrap { overflow-x:auto; border-radius:12px; box-shadow:var(--shadow); }
-  table { width:100%; border-collapse:collapse; background:#fff; font-size:14px; }
-  thead { background:var(--secondary); color:#fff; }
-  thead th { padding:14px 16px; text-align:left; font-weight:700; white-space:nowrap; }
-  tbody tr { border-bottom:1px solid var(--border); transition:background .15s; }
-  tbody tr:hover { background:rgba(232,56,26,0.04); }
-  tbody td { padding:13px 16px; vertical-align:middle; }
-  .badge-mode {
-    background:rgba(26,42,74,0.1); color:var(--secondary);
-    padding:3px 10px; border-radius:20px; font-size:12px; font-weight:700;
-  }
-  .btn-sm {
-    padding:6px 14px; border-radius:20px;
-    font-size:12px; font-weight:700; cursor:pointer;
-    display:inline-block; transition:.15s;
-  }
-  .btn-sm-outline {
-    border:1.5px solid var(--secondary); color:var(--secondary); background:transparent;
-  }
-  .btn-sm-outline:hover { background:var(--secondary); color:#fff; }
-  .btn-sm-primary { background:var(--primary); color:#fff; border:none; }
-  .btn-sm-primary:hover { background:var(--primary-dark); }
+    .topbar span {
+      color: var(--accent);
+      font-weight: 700;
+    }
 
-  /* INSTRUCTORS */
-  .instructors-grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
-    gap:24px;
-  }
-  .instructor-card {
-    background:#fff; border-radius:14px; padding:28px 20px;
-    text-align:center; box-shadow:var(--shadow);
-    transition:.25s;
-  }
-  .instructor-card:hover { transform:translateY(-4px); box-shadow:0 14px 40px rgba(0,0,0,0.12); }
-  .instructor-avatar {
-    width:80px; height:80px; border-radius:50%;
-    background:linear-gradient(135deg, var(--secondary), #3a5a9a);
-    margin:0 auto 14px;
-    display:flex; align-items:center; justify-content:center;
-    font-size:32px; color:#fff; font-weight:900;
-  }
-  .instructor-card h4 { font-size:15px; font-weight:800; color:var(--secondary); }
-  .instructor-card p { font-size:13px; color:var(--text-light); margin:6px 0 14px; }
-  .btn-view-profile {
-    display:inline-block; border:1.5px solid var(--primary); color:var(--primary);
-    padding:6px 18px; border-radius:20px; font-size:13px; font-weight:700;
-    transition:.2s;
-  }
-  .btn-view-profile:hover { background:var(--primary); color:#fff; }
+    .topbar-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
 
-  /* TRAINING OPTIONS */
-  .training-grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
-    gap:24px;
-  }
-  .training-card {
-    background:#fff; border-radius:14px; padding:32px 24px;
-    text-align:center; box-shadow:var(--shadow);
-    border-top:4px solid var(--primary); transition:.25s;
-  }
-  .training-card:hover { transform:translateY(-4px); }
-  .training-card .t-icon {
-    width:70px; height:70px; border-radius:50%;
-    background:linear-gradient(135deg,#fff5f3,#ffe0d9);
-    display:flex; align-items:center; justify-content:center;
-    margin:0 auto 18px; font-size:30px; color:var(--primary);
-  }
-  .training-card h4 { font-size:17px; font-weight:800; color:var(--secondary); margin-bottom:10px; }
-  .training-card p { font-size:14px; color:var(--text-light); line-height:1.6; }
+    .topbar-item i {
+      color: var(--accent);
+    }
 
-  /* WHY US */
-  .why-grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
-    gap:20px;
-  }
-  .why-card {
-    background:#fff; border-radius:12px; padding:24px 18px;
-    text-align:center; box-shadow:var(--shadow); transition:.2s;
-  }
-  .why-card:hover { transform:translateY(-3px); border-color:var(--primary); }
-  .why-card .w-icon {
-    width:56px; height:56px; border-radius:50%;
-    background:linear-gradient(135deg,var(--primary),#ff6b4a);
-    display:flex; align-items:center; justify-content:center;
-    margin:0 auto 12px; font-size:22px; color:#fff;
-  }
-  .why-card h5 { font-size:13px; font-weight:800; color:var(--secondary); line-height:1.4; }
+    /* NAVBAR */
+    nav {
+      background: #fff;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-  /* APPROACH */
-  .approach-grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
-    gap:20px;
-  }
-  .approach-card {
-    text-align:center; padding:24px 16px;
-    background:#fff; border-radius:12px; box-shadow:var(--shadow);
-  }
-  .step-num {
-    width:42px; height:42px; border-radius:50%;
-    background:var(--primary); color:#fff;
-    display:flex; align-items:center; justify-content:center;
-    font-weight:900; font-size:16px; margin:0 auto 12px;
-  }
-  .approach-card h5 { font-weight:800; color:var(--secondary); font-size:14px; }
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
 
-  /* TESTIMONIALS */
-  .testimonials-grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
-    gap:24px;
-  }
-  .testimonial-card {
-    background:#fff; border-radius:14px; padding:28px;
-    box-shadow:var(--shadow); position:relative;
-    border-left:4px solid var(--primary);
-  }
-  .testimonial-card::before {
-    content:'"'; font-size:80px; color:var(--primary); opacity:.1;
-    position:absolute; top:-10px; left:16px;
-    font-family:'Merriweather',serif; line-height:1;
-  }
-  .testimonial-text { font-size:14px; color:var(--text-light); line-height:1.7; margin-bottom:20px; }
-  .testimonial-author { display:flex; align-items:center; gap:12px; }
-  .t-avatar {
-    width:44px; height:44px; border-radius:50%;
-    background:linear-gradient(135deg,var(--secondary),#3a5a9a);
-    display:flex; align-items:center; justify-content:center;
-    color:#fff; font-weight:900; font-size:16px; flex-shrink:0;
-  }
-  .t-name { font-weight:800; color:var(--secondary); font-size:14px; }
-  .t-source { font-size:12px; color:var(--text-light); }
-  .stars { color:var(--accent); font-size:13px; }
+    .logo img {
+      height: 50px;
+    }
 
-  /* CTA BAND */
-  .cta-band {
-    background:linear-gradient(135deg,var(--secondary),#0d1f3c);
-    color:#fff; text-align:center; padding:60px 20px;
-  }
-  .cta-band h2 { font-size:clamp(22px,3vw,34px); font-weight:900; margin-bottom:12px; }
-  .cta-band p { font-size:16px; opacity:.8; margin-bottom:28px; }
+    .logo-text {
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--secondary);
+    }
 
-  /* BLOG POSTS */
-  .blog-grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
-    gap:24px;
-  }
-  .blog-card {
-    background:#fff; border-radius:14px; overflow:hidden;
-    box-shadow:var(--shadow); transition:.25s;
-  }
-  .blog-card:hover { transform:translateY(-4px); }
-  .blog-img {
-    height:180px; background:linear-gradient(135deg,var(--secondary),#3a5a9a);
-    display:flex; align-items:center; justify-content:center;
-    font-size:48px;
-  }
-  .blog-content { padding:20px; }
-  .blog-cat {
-    color:var(--primary); font-size:12px; font-weight:800;
-    text-transform:uppercase; letter-spacing:.5px; margin-bottom:8px;
-  }
-  .blog-content h4 { font-size:15px; font-weight:800; color:var(--secondary); line-height:1.4; margin-bottom:10px; }
-  .blog-content p { font-size:13px; color:var(--text-light); line-height:1.6; }
-  .blog-link { color:var(--primary); font-weight:700; font-size:13px; margin-top:10px; display:inline-block; }
+    .logo-text span {
+      color: var(--primary);
+    }
 
-  /* FOOTER */
-  footer {
-    background:var(--secondary); color:rgba(255,255,255,0.85);
-    padding:60px 20px 20px;
-  }
-  .footer-grid {
-    max-width:1200px; margin:auto;
-    display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
-    gap:32px; margin-bottom:40px;
-  }
-  .footer-col h5 { color:#fff; font-size:14px; font-weight:800; margin-bottom:16px; position:relative; padding-bottom:10px; }
-  .footer-col h5::after { content:''; position:absolute; bottom:0; left:0; width:30px; height:2px; background:var(--primary); }
-  .footer-col ul { list-style:none; }
-  .footer-col ul li { margin-bottom:8px; }
-  .footer-col ul li a { font-size:13px; color:rgba(255,255,255,0.7); transition:color .15s; }
-  .footer-col ul li a:hover { color:var(--accent); }
-  .footer-col p { font-size:13px; line-height:1.7; color:rgba(255,255,255,0.7); }
-  .footer-contact a { display:flex; align-items:center; gap:8px; font-size:13px; color:rgba(255,255,255,0.7); margin-bottom:10px; }
-  .footer-contact a:hover { color:var(--accent); }
-  .social-links { display:flex; gap:12px; margin-top:16px; }
-  .social-links a {
-    width:36px; height:36px; border-radius:50%;
-    background:rgba(255,255,255,0.1);
-    display:flex; align-items:center; justify-content:center;
-    font-size:14px; color:#fff; transition:.2s;
-  }
-  .social-links a:hover { background:var(--primary); }
-  .footer-bottom {
-    border-top:1px solid rgba(255,255,255,0.1);
-    max-width:1200px; margin:0 auto;
-    padding-top:20px;
-    display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;
-    font-size:13px; color:rgba(255,255,255,0.5);
-  }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      list-style: none;
+    }
 
-  /* MOBILE NAV */
-  .mobile-nav {
-    display:none; position:fixed; inset:0;
-    background:rgba(0,0,0,0.5); z-index:2000;
-  }
-  .mobile-nav.open { display:block; }
-  .mobile-nav-panel {
-    background:#fff; width:85%; max-width:340px; height:100%;
-    overflow-y:auto; padding:20px;
-    transform:translateX(-100%); transition:.3s;
-  }
-  .mobile-nav.open .mobile-nav-panel { transform:translateX(0); }
-  .mobile-nav-panel ul { list-style:none; }
-  .mobile-nav-panel ul li a {
-    display:block; padding:12px 0; font-weight:700;
-    border-bottom:1px solid var(--border); color:var(--secondary);
-  }
-  .mobile-nav-panel ul li a:hover { color:var(--primary); }
-  .close-mobile { font-size:24px; cursor:pointer; color:var(--secondary); margin-bottom:20px; }
+    .nav-links>li {
+      position: relative;
+    }
 
-  /* SCROLL ANIMATIONS */
-  .fade-up { opacity:0; transform:translateY(30px); transition:.6s; }
-  .fade-up.visible { opacity:1; transform:translateY(0); }
+    .nav-links>li>a {
+      padding: 8px 14px;
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--secondary);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      border-radius: 4px;
+      transition: color .2s, background .2s;
+    }
 
-  @media(max-width:768px) {
-    .nav-links { display:none; }
-    .hamburger { display:block; }
-    .hero-form-wrap { display:none; }
-    .hero-text { text-align:center; }
-    .hero-tags, .hero-btns { justify-content:center; }
-    .stats-container { gap:10px; }
-    thead th:nth-child(n+4) { display:none; }
-    td:nth-child(n+4) { display:none; }
-  }
-</style>
+    .nav-links>li>a:hover {
+      color: var(--primary);
+      background: rgba(232, 56, 26, 0.05);
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      min-width: 240px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+      border-top: 3px solid var(--primary);
+      border-radius: 0 0 8px 8px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(8px);
+      transition: .2s;
+      z-index: 100;
+    }
+
+    .nav-links>li:hover .dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 10px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      border-bottom: 1px solid #f0f0f0;
+      transition: background .2s, color .2s;
+    }
+
+    .dropdown a:hover {
+      background: var(--light-bg);
+      color: var(--primary);
+    }
+
+    .btn-enroll {
+      background: var(--primary);
+      color: #fff !important;
+      padding: 10px 22px !important;
+      border-radius: 30px !important;
+      font-weight: 800 !important;
+      font-size: 14px !important;
+      transition: background .2s, transform .1s !important;
+    }
+
+    .btn-enroll:hover {
+      background: var(--primary-dark) !important;
+      transform: scale(1.03);
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: var(--secondary);
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, var(--secondary) 0%, #0d1f3c 60%, #1a3566 100%);
+      color: #fff;
+      padding: 70px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .hero-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      padding: 4px 16px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: .5px;
+    }
+
+    .hero-text h1 {
+      font-size: clamp(28px, 4vw, 48px);
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .hero-text h1 span {
+      color: var(--accent);
+    }
+
+    .hero-text p {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .hero-tag {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 30px;
+      font-weight: 800;
+      font-size: 15px;
+      transition: .2s;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(232, 56, 26, 0.4);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 30px;
+      font-weight: 800;
+      font-size: 15px;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      transition: .2s;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .btn-outline:hover {
+      border-color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* HERO FORM */
+    .hero-form-wrap {
+      flex: 0 0 340px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-form {
+      background: #fff;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-form h3 {
+      color: var(--secondary);
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 14px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: 'Nunito', sans-serif;
+      color: var(--text);
+      transition: border-color .2s;
+      -webkit-appearance: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    .form-submit {
+      width: 100%;
+      padding: 13px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+      font-family: 'Nunito', sans-serif;
+      transition: .2s;
+    }
+
+    .form-submit:hover {
+      background: var(--primary-dark);
+    }
+
+    /* STATS BAR */
+    .stats-bar {
+      background: var(--primary);
+      padding: 20px 0;
+    }
+
+    .stats-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 16px;
+    }
+
+    .stat-item {
+      text-align: center;
+      color: #fff;
+    }
+
+    .stat-num {
+      font-size: clamp(26px, 4vw, 36px);
+      font-weight: 900;
+      display: block;
+    }
+
+    .stat-label {
+      font-size: 13px;
+      opacity: .85;
+      font-weight: 600;
+    }
+
+    /* SECTION COMMONS */
+    .section {
+      padding: 70px 20px;
+    }
+
+    .section-alt {
+      background: var(--light-bg);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .section-header h2 {
+      font-size: clamp(24px, 3vw, 36px);
+      font-weight: 900;
+      color: var(--secondary);
+      margin-bottom: 12px;
+    }
+
+    .section-header p {
+      color: var(--text-light);
+      font-size: 16px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .section-header .underline {
+      width: 60px;
+      height: 4px;
+      background: var(--primary);
+      border-radius: 2px;
+      margin: 14px auto 0;
+    }
+
+    /* COURSES GRID */
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .course-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: .25s;
+      cursor: pointer;
+      border: 1px solid transparent;
+      text-align: center;
+      padding: 24px 16px;
+    }
+
+    .course-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .course-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), #ff6b4a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 14px;
+      font-size: 26px;
+      color: #fff;
+    }
+
+    .course-card h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--secondary);
+      line-height: 1.4;
+    }
+
+    .course-cat {
+      display: inline-block;
+      background: rgba(232, 56, 26, 0.1);
+      color: var(--primary);
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      margin-top: 8px;
+    }
+
+    /* SCHEDULE TABLE */
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      font-size: 14px;
+    }
+
+    thead {
+      background: var(--secondary);
+      color: #fff;
+    }
+
+    thead th {
+      padding: 14px 16px;
+      text-align: left;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid var(--border);
+      transition: background .15s;
+    }
+
+    tbody tr:hover {
+      background: rgba(232, 56, 26, 0.04);
+    }
+
+    tbody td {
+      padding: 13px 16px;
+      vertical-align: middle;
+    }
+
+    .badge-mode {
+      background: rgba(26, 42, 74, 0.1);
+      color: var(--secondary);
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .btn-sm {
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-block;
+      transition: .15s;
+    }
+
+    .btn-sm-outline {
+      border: 1.5px solid var(--secondary);
+      color: var(--secondary);
+      background: transparent;
+    }
+
+    .btn-sm-outline:hover {
+      background: var(--secondary);
+      color: #fff;
+    }
+
+    .btn-sm-primary {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+    }
+
+    .btn-sm-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    /* INSTRUCTORS */
+    .instructors-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 24px;
+    }
+
+    .instructor-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 28px 20px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: .25s;
+    }
+
+    .instructor-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .instructor-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--secondary), #3a5a9a);
+      margin: 0 auto 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      color: #fff;
+      font-weight: 900;
+    }
+
+    .instructor-card h4 {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--secondary);
+    }
+
+    .instructor-card p {
+      font-size: 13px;
+      color: var(--text-light);
+      margin: 6px 0 14px;
+    }
+
+    .btn-view-profile {
+      display: inline-block;
+      border: 1.5px solid var(--primary);
+      color: var(--primary);
+      padding: 6px 18px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .btn-view-profile:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    /* TRAINING OPTIONS */
+    .training-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .training-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      border-top: 4px solid var(--primary);
+      transition: .25s;
+    }
+
+    .training-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .training-card .t-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #fff5f3, #ffe0d9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 18px;
+      font-size: 30px;
+      color: var(--primary);
+    }
+
+    .training-card h4 {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--secondary);
+      margin-bottom: 10px;
+    }
+
+    .training-card p {
+      font-size: 14px;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    /* WHY US */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .why-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px 18px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: .2s;
+    }
+
+    .why-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--primary);
+    }
+
+    .why-card .w-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), #ff6b4a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 12px;
+      font-size: 22px;
+      color: #fff;
+    }
+
+    .why-card h5 {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--secondary);
+      line-height: 1.4;
+    }
+
+    /* APPROACH */
+    .approach-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .approach-card {
+      text-align: center;
+      padding: 24px 16px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+
+    .step-num {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 16px;
+      margin: 0 auto 12px;
+    }
+
+    .approach-card h5 {
+      font-weight: 800;
+      color: var(--secondary);
+      font-size: 14px;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .testimonial-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      position: relative;
+      border-left: 4px solid var(--primary);
+    }
+
+    .testimonial-card::before {
+      content: '"';
+      font-size: 80px;
+      color: var(--primary);
+      opacity: .1;
+      position: absolute;
+      top: -10px;
+      left: 16px;
+      font-family: 'Merriweather', serif;
+      line-height: 1;
+    }
+
+    .testimonial-text {
+      font-size: 14px;
+      color: var(--text-light);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .t-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--secondary), #3a5a9a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 900;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .t-name {
+      font-weight: 800;
+      color: var(--secondary);
+      font-size: 14px;
+    }
+
+    .t-source {
+      font-size: 12px;
+      color: var(--text-light);
+    }
+
+    .stars {
+      color: var(--accent);
+      font-size: 13px;
+    }
+
+    /* CTA BAND */
+    .cta-band {
+      background: linear-gradient(135deg, var(--secondary), #0d1f3c);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .cta-band h2 {
+      font-size: clamp(22px, 3vw, 34px);
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    .cta-band p {
+      font-size: 16px;
+      opacity: .8;
+      margin-bottom: 28px;
+    }
+
+    /* BLOG POSTS */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .blog-card {
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: .25s;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .blog-img {
+      height: 180px;
+      background: linear-gradient(135deg, var(--secondary), #3a5a9a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+    }
+
+    .blog-content {
+      padding: 20px;
+    }
+
+    .blog-cat {
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      margin-bottom: 8px;
+    }
+
+    .blog-content h4 {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--secondary);
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
+    .blog-content p {
+      font-size: 13px;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    .blog-link {
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 13px;
+      margin-top: 10px;
+      display: inline-block;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--secondary);
+      color: rgba(255, 255, 255, 0.85);
+      padding: 60px 20px 20px;
+    }
+
+    .footer-grid {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 32px;
+      margin-bottom: 40px;
+    }
+
+    .footer-col h5 {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .footer-col h5::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: var(--primary);
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-col ul li a {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.7);
+      transition: color .15s;
+    }
+
+    .footer-col ul li a:hover {
+      color: var(--accent);
+    }
+
+    .footer-col p {
+      font-size: 13px;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer-contact a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 10px;
+    }
+
+    .footer-contact a:hover {
+      color: var(--accent);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .social-links a {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: #fff;
+      transition: .2s;
+    }
+
+    .social-links a:hover {
+      background: var(--primary);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    /* MOBILE NAV */
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 2000;
+    }
+
+    .mobile-nav.open {
+      display: block;
+    }
+
+    .mobile-nav-panel {
+      background: #fff;
+      width: 85%;
+      max-width: 340px;
+      height: 100%;
+      overflow-y: auto;
+      padding: 20px;
+      transform: translateX(-100%);
+      transition: .3s;
+    }
+
+    .mobile-nav.open .mobile-nav-panel {
+      transform: translateX(0);
+    }
+
+    .mobile-nav-panel ul {
+      list-style: none;
+    }
+
+    .mobile-nav-panel ul li a {
+      display: block;
+      padding: 12px 0;
+      font-weight: 700;
+      border-bottom: 1px solid var(--border);
+      color: var(--secondary);
+    }
+
+    .mobile-nav-panel ul li a:hover {
+      color: var(--primary);
+    }
+
+    .close-mobile {
+      font-size: 24px;
+      cursor: pointer;
+      color: var(--secondary);
+      margin-bottom: 20px;
+    }
+
+    /* SCROLL ANIMATIONS */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: .6s;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media(max-width:768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .hero-form-wrap {
+        display: none;
+      }
+
+      .hero-text {
+        text-align: center;
+      }
+
+      .hero-tags,
+      .hero-btns {
+        justify-content: center;
+      }
+
+      .stats-container {
+        gap: 10px;
+      }
+
+      thead th:nth-child(n+4) {
+        display: none;
+      }
+
+      td:nth-child(n+4) {
+        display: none;
+      }
+    }
+
+    /* DEMO MODAL */
+    .demo-modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9000;
+      background: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(4px);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .demo-modal-overlay.open {
+      display: flex;
+    }
+
+    .demo-modal {
+      background: #fff;
+      border-radius: 18px;
+      padding: 36px 32px;
+      width: 100%;
+      max-width: 440px;
+      position: relative;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+      animation: modalIn .3s ease;
+    }
+
+    @keyframes modalIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    .demo-modal h3 {
+      color: var(--secondary);
+      font-size: 20px;
+      font-weight: 900;
+      text-align: center;
+      margin-bottom: 4px;
+    }
+
+    .demo-modal .modal-sub {
+      color: var(--text-light);
+      font-size: 13px;
+      text-align: center;
+      margin-bottom: 22px;
+    }
+
+    .demo-modal .form-group {
+      margin-bottom: 13px;
+    }
+
+    .demo-modal .form-group input,
+    .demo-modal .form-group select {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: 'Nunito', sans-serif;
+      color: var(--text);
+      transition: border-color .2s;
+      -webkit-appearance: none;
+      background: #fff;
+    }
+
+    .demo-modal .form-group input:focus,
+    .demo-modal .form-group select:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    .modal-submit {
+      width: 100%;
+      padding: 14px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+      font-family: 'Nunito', sans-serif;
+      transition: .2s;
+    }
+
+    .modal-submit:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      font-size: 22px;
+      cursor: pointer;
+      color: var(--text-light);
+      background: none;
+      border: none;
+      line-height: 1;
+    }
+
+    .modal-close:hover {
+      color: var(--primary);
+    }
+
+    .modal-note {
+      font-size: 11.5px;
+      color: var(--text-light);
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- TOP BAR -->
-<div class="topbar">
-  <div class="container">
-    <div style="display:flex;gap:20px;flex-wrap:wrap;">
-      <span class="topbar-item"><i class="fas fa-map-marker-alt"></i> Ameerpet, Hyd <span>+91 9642367632</span></span>
-      <span class="topbar-item"><i class="fas fa-map-marker-alt"></i> Toronto, Canada <span>+1 2899014184</span></span>
-	  <span class="topbar-item"><i class="fas fa-map-marker-alt"></i> Dallas, Texas,US <span>+1 9802299422</span></span>
-    </div>
-    <div style="display:flex;gap:20px;flex-wrap:wrap;">
-      <span class="topbar-item"><i class="fas fa-briefcase"></i> <a href="#">Hire From Us</a></span>
-      <span class="topbar-item"><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection#98f1f6fef7d8f1f6ecfdf4fde0f9ecfdfbf0f6f7f4f7fff1fdebb6fbf7f5"><span class="__cf_email__" data-cfemail="7a13141c153a13140e1f161f021b0e1f1912141516151d131f0954191517">[email&#160;protected]</span></a></span>
-    </div>
-  </div>
-</div>
-
-<!-- NAVBAR -->
-<nav>
-  <div class="nav-container">
-    <div class="logo-text"><span>Intelexa</span> Technologies</div>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li>
-        <a href="#">All Courses <i class="fas fa-chevron-down" style="font-size:10px;"></i></a>
-        <div class="dropdown">
-		  <a href="ds-course.html">Data Science with GenAI & Agentic AI</a>	
-          <a href="#">Full Stack Software Testing with AI</a>
-		  <a href="#">DEVOPS with Multi-Cloud and AI</a>
-          <a href="#">Selenium Automation Testing</a>
-		  <a href="#">Azure Data Engineer</a>	
-          <a href="#">Playwright Automation Testing</a>
-          <a href="#">Java Full Stack with AI</a>
-          <a href="#">Python Full Stack with AI</a>
-        </div>
-      </li>
-      <li><a href="#">New Batches</a></li>
-      <li>
-        <a href="#">Placements <i class="fas fa-chevron-down" style="font-size:10px;"></i></a>
-        <div class="dropdown">
-          <a href="#">Current Openings</a>
-          <a href="#">Recent Placements</a>
-          <a href="#">All Placed</a>
-          <a href="#">Placed Companies</a>
-        </div>
-      </li>
-      <li><a href="#">Reviews</a></li>
-      <li>
-        <a href="#">Students Zone <i class="fas fa-chevron-down" style="font-size:10px;"></i></a>
-        <div class="dropdown">
-          <a href="#">Blog</a>
-          <a href="#">Projects</a>
-          <a href="#">Interview Questions</a>
-          <a href="#">Tutorials</a>
-          <a href="#">Resumes</a>
-          <a href="#">Downloads</a>
-        </div>
-      </li>
-      <li><a href="#">Contact Us</a></li>
-      <li><a href="#" class="btn-enroll">Enroll Now</a></li>
-    </ul>
-    <div class="hamburger" onclick="openMobileNav()"><i class="fas fa-bars"></i></div>
-  </div>
-</nav>
-
-<!-- MOBILE NAV -->
-<div class="mobile-nav" id="mobileNav" onclick="closeMobileNavOutside(event)">
-  <div class="mobile-nav-panel">
-    <div class="close-mobile" onclick="closeMobileNav()"><i class="fas fa-times"></i></div>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="ds-course.html">Data Science with GenAI</a></li>
-      <li><a href="#">All Courses</a></li>
-      <li><a href="#">New Batches</a></li>
-      <li><a href="#">Current Openings</a></li>
-      <li><a href="#">Recent Placements</a></li>
-      <li><a href="#">Reviews</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Contact Us</a></li>
-      <li><a href="#" style="color:var(--primary);">Enroll Now</a></li>
-    </ul>
-  </div>
-</div>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-container">
-    <div class="hero-text">
-      <span class="hero-badge">🏆 India's #1 IT Training Institute</span>
-      <h1>Learn IT With <span>Confidence and Hands-On Practicals</span> &amp; Land Your Dream Job</h1>
-      <p>Intelexa Technologies is a leading provider of comprehensive IT training programs. Our industry experts equip you with the skills needed to excel in today's competitive job market.</p>
-      <div class="hero-tags">
-        <span class="hero-tag">Onsite Training</span>
-        <span class="hero-tag">Online Training</span>
-        <span class="hero-tag">Live Projects</span>
-        <span class="hero-tag">Placement Support</span>
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container">
+      <div style="display:flex;gap:20px;flex-wrap:wrap;">
+        <span class="topbar-item"><i class="fas fa-map-marker-alt"></i> Ameerpet, Hyd <span>+91 8008594755</span></span>
+        <span class="topbar-item"><i class="fas fa-map-marker-alt"></i> Toronto, Canada <span>+1
+            2899014184</span></span>
+        <span class="topbar-item"><i class="fas fa-map-marker-alt"></i> Dallas, Texas,US <span>+1
+            9802299422</span></span>
       </div>
-      <div class="hero-btns">
-        <a href="#" class="btn-primary">Register for Free Demo</a>
-        <a href="#courses" class="btn-outline">Explore Courses</a>
-      </div>
-    </div>
-    <div class="hero-form-wrap">
-      <div class="hero-form">
-        <h3>🎓 Enroll for Free Demo</h3>
-        <div class="form-group">
-          <input type="text" placeholder="Your Full Name">
-        </div>
-        <div class="form-group">
-          <input type="tel" placeholder="Mobile Number">
-        </div>
-        <div class="form-group">
-          <input type="email" placeholder="Email Address">
-        </div>
-        <div class="form-group">
-          <select>
-            <option value="">Select Course</option>
-			<option>Data Science with GenAI & Agentic AI</option>
-			<option>DevOps Multi-Cloud with AI</option>
-			<option>Full Stack Software Testing with AI</option>
-			<option>Azure Data Engineer</option>
-            <option>Playwright Automation Testing</option>
-            <option>API Testing</option>
-            <option>Java Full Stack with AI</option>
-            <option>Python Full Stack with AI</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <select>
-            <option value="">Training Mode</option>
-            <option>Classroom</option>
-            <option>Online</option>
-          </select>
-        </div>
-        <button class="form-submit">Enroll for Free Demo</button>
+      <div style="display:flex;gap:20px;flex-wrap:wrap;">
+        <span class="topbar-item"><i class="fas fa-briefcase"></i> <a href="#">Hire From Us</a></span>
+        <span class="topbar-item"><i class="fas fa-envelope"></i> <a
+            href="mailto:info@intelexatech.com">info@intelexatech.com</a></span>
       </div>
     </div>
   </div>
-</section>
 
-<!-- STATS -->
-<div class="stats-bar">
-  <div class="stats-container">
-    <div class="stat-item"><span class="stat-num">30K+</span><span class="stat-label">Students Trained</span></div>
-    <div class="stat-item"><span class="stat-num">20K+</span><span class="stat-label">Students Placed</span></div>
-    <div class="stat-item"><span class="stat-num">350K+</span><span class="stat-label">Placement Tie-ups</span></div>
-    <div class="stat-item"><span class="stat-num">30K+</span><span class="stat-label">Recruitment Drives / Month</span></div>
-    <div class="stat-item"><span class="stat-num">365</span><span class="stat-label">Days Placement Support</span></div>
-  </div>
-</div>
-
-<!-- ABOUT -->
-<section class="section" id="about">
-  <div class="container">
-    <div style="display:flex;gap:50px;flex-wrap:wrap;align-items:center;">
-      <div style="flex:1;min-width:280px;" class="fade-up">
-        <span style="color:var(--primary);font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:1px;">About Intelexa</span>
-        <h2 style="font-size:clamp(22px,3vw,34px);font-weight:900;color:var(--secondary);margin:10px 0 18px;">Intelexa, The Best Software Training Institute in India</h2>
-        <p style="color:var(--text-light);font-size:15px;line-height:1.8;margin-bottom:16px;"><strong style="color:var(--secondary);">Our Experience Your Winning Edge.</strong></p>
-        <p style="color:var(--text-light);font-size:15px;line-height:1.8;margin-bottom:16px;">Intelexa Technologies is a leading provider of comprehensive IT training programs, specializing in in-demand areas like QA Software Testing, Full Stack Web Development, DevOps & Multi-Cloud, and Playwright Automation Testing.</p>
-        <p style="color:var(--text-light);font-size:15px;line-height:1.8;margin-bottom:24px;">Our expertly designed courses are delivered by industry professionals and equip students with the skills needed to excel in today's competitive job market.</p>
-        <a href="#" class="btn-primary">Know More</a>
-      </div>
-      <div style="flex:0 0 360px;min-width:280px;" class="fade-up">
-        <div style="background:var(--light-bg);border-radius:16px;padding:28px;">
-          <h4 style="font-size:17px;font-weight:800;color:var(--secondary);margin-bottom:20px;">Our Training Approach</h4>
-          <div style="display:flex;flex-direction:column;gap:12px;">
-            <div style="display:flex;align-items:center;gap:14px;background:#fff;padding:14px 18px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-              <div style="width:32px;height:32px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;flex-shrink:0;">1</div>
-              <div><strong style="color:var(--secondary);">Theory</strong> – Comprehensive conceptual understanding</div>
-            </div>
-            <div style="display:flex;align-items:center;gap:14px;background:#fff;padding:14px 18px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-              <div style="width:32px;height:32px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;flex-shrink:0;">2</div>
-              <div><strong style="color:var(--secondary);">Project Work</strong> – Hands-on live projects</div>
-            </div>
-            <div style="display:flex;align-items:center;gap:14px;background:#fff;padding:14px 18px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-              <div style="width:32px;height:32px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;flex-shrink:0;">3</div>
-              <div><strong style="color:var(--secondary);">Certifications</strong> – Industry-recognized certs</div>
-            </div>
-            <div style="display:flex;align-items:center;gap:14px;background:#fff;padding:14px 18px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-              <div style="width:32px;height:32px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;flex-shrink:0;">4</div>
-              <div><strong style="color:var(--secondary);">Placement Support</strong> – 365 days assistance</div>
-            </div>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo-text"><span>Intelexa</span> Technologies</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="ds-course.html">Our Course</a>
+        </li>
+        <li><a href="#">New Batches</a></li>
+        <li>
+          <a href="#">Placements <i class="fas fa-chevron-down" style="font-size:10px;"></i></a>
+          <div class="dropdown">
+            <a href="#">Current Openings</a>
+            <a href="#">Recent Placements</a>
+            <a href="#">All Placed</a>
+            <a href="#">Placed Companies</a>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- COURSES -->
-<section class="section section-alt" id="courses">
-  <div class="container">
-    <div class="section-header fade-up">
-      <h2>Our Trending Courses</h2>
-      <p>Industry-relevant programs designed by experts to accelerate your IT career</p>
-      <div class="underline"></div>
-    </div>
-    <div class="courses-grid fade-up">
-      <div class="course-card" onclick="window.location.href='ds-course.html'" style="border:2px solid var(--primary);position:relative;cursor:pointer;" tabindex="0" role="link" aria-label="Data Science with GenAI and Agentic AI course page" onkeydown="if(event.key==='Enter')window.location.href='ds-course.html'">
-        <span style="position:absolute;top:10px;right:10px;background:var(--accent);color:#fff;font-size:10px;font-weight:900;padding:2px 8px;border-radius:20px;letter-spacing:.5px;">⭐ NEW</span>
-        <div class="course-icon" style="background:linear-gradient(135deg,#1a2a4a,#3a5a9a);"><i class="fas fa-brain"></i></div>
-        <h4>Data Science with GenAI &amp; Agentic AI</h4>
-        <span class="course-cat">Data Science</span>
-      </div>
-      <div class="course-card">
-        <div class="course-icon"><i class="fas fa-bug"></i></div>
-        <h4>Full Stack Software Testing with AI</h4>
-        <span class="course-cat">Testing</span>
-      </div>
-      <div class="course-card">
-        <div class="course-icon"><i class="fas fa-vial"></i></div>
-        <h4>Manual Testing</h4>
-        <span class="course-cat">Testing</span>
-      </div>
-      <div class="course-card">
-        <div class="course-icon" style="background:linear-gradient(135deg,#e8381a,#c42d10);"><i class="fab fa-java"></i></div>
-        <h4>Selenium with Java</h4>
-        <span class="course-cat">Automation</span>
-      </div>
-      <div class="course-card">
-        <div class="course-icon" style="background:linear-gradient(135deg,#306998,#FFD43B);"><i class="fab fa-python"></i></div>
-        <h4>Selenium with Python</h4>
-        <span class="course-cat">Automation</span>
-      </div>
-      <div class="course-card">
-        <div class="course-icon" style="background:linear-gradient(135deg,#2d5016,#4caf50);"><i class="fas fa-play-circle"></i></div>
-        <h4>Playwright Automation Testing</h4>
-        <span class="course-cat">Automation</span>
-      </div>
-      <div class="course-card">
-        <div class="course-icon" style="background:linear-gradient(135deg,#6a0dad,#9b59b6);"><i class="fas fa-plug"></i></div>
-        <h4>API Testing</h4>
-        <span class="course-cat">Testing</span>
-      </div>
-      <div class="course-card">
-        <div class="course-icon" style="background:linear-gradient(135deg,#e65c00,#f9d423);"><i class="fab fa-java"></i></div>
-        <h4>Java Full Stack with AI</h4>
-        <span class="course-cat">Full Stack</span>
-      </div>
-      <div class="course-card">
-        <div class="course-icon" style="background:linear-gradient(135deg,#1565c0,#42a5f5);"><i class="fab fa-python"></i></div>
-        <h4>Python Full Stack with AI</h4>
-        <span class="course-cat">Full Stack</span>
-      </div>
-    </div>
-    <div style="text-align:center;margin-top:36px;">
-      <a href="#" class="btn-primary">More Courses</a>
-    </div>
-  </div>
-</section>
-
-<!-- SCHEDULE TABLE -->
-<section class="section">
-  <div class="container">
-    <div class="section-header fade-up">
-      <h2>Training Schedule — New Batches</h2>
-      <p>Join upcoming batches and start your learning journey today</p>
-      <div class="underline"></div>
-    </div>
-    <div class="table-wrap fade-up">
-      <table>
-        <thead>
-          <tr>
-            <th>Course</th>
-            <th>Start Date</th>
-            <th>Timings</th>
-            <th>Duration</th>
-            <th>Trainer</th>
-            <th>Mode</th>
-            <th>Curriculum</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Full Stack Java/Python with AI</strong></td>
-            <td>10-Mar-2026</td>
-            <td>10:00 AM – 11:30 AM</td>
-            <td>4 Months</td>
-            <td>Mr. Venkateswarlu</td>
-            <td><span class="badge-mode">Online / Offline</span></td>
-            <td><a href="#" class="btn-sm btn-sm-outline">Download</a></td>
-            <td><a href="#" class="btn-sm btn-sm-primary">Register</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- INSTRUCTORS -->
-<section class="section section-alt">
-  <div class="container">
-    <div class="section-header fade-up">
-      <h2>Our Prime Instructors</h2>
-      <p>Learn from experienced industry professionals with real-world expertise</p>
-      <div class="underline"></div>
-    </div>
-  </div>
-</section>
-
-<!-- TRAINING OPTIONS -->
-<section class="section">
-  <div class="container">
-    <div class="section-header fade-up">
-      <h2>Training Options</h2>
-      <p>Choose the learning format that works best for you</p>
-      <div class="underline"></div>
-    </div>
-    <div class="training-grid fade-up">
-      <div class="training-card">
-        <div class="t-icon"><i class="fas fa-chalkboard-teacher"></i></div>
-        <h4>Classroom Training</h4>
-        <p>Learn in spacious classrooms with in-person interaction training by industry experts.</p>
-      </div>
-      <div class="training-card">
-        <div class="t-icon"><i class="fas fa-laptop"></i></div>
-        <h4>Live Online Training</h4>
-        <p>Attend classes from any place, at any time, as per your convenience and schedule.</p>
-      </div>
-      <div class="training-card">
-        <div class="t-icon"><i class="fas fa-video"></i></div>
-        <h4>Self-Paced Video Learning</h4>
-        <p>Learn end-to-end course content similar to instructor-led virtual or classroom training.</p>
-      </div>
-      <div class="training-card">
-        <div class="t-icon"><i class="fas fa-building"></i></div>
-        <h4>Corporate Training</h4>
-        <p>Skill your workforce in new-age technologies with our cutting-edge curriculum.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHY CHOOSE US -->
-<section class="section section-alt">
-  <div class="container">
-    <div class="section-header fade-up">
-      <h2>Why Choose Intelexa Technologies</h2>
-      <p>What sets us apart from every other training institute</p>
-      <div class="underline"></div>
-    </div>
-    <div class="why-grid fade-up">
-      <div class="why-card">
-        <div class="w-icon"><i class="fas fa-user-tie"></i></div>
-        <h5>Real Time Professionals</h5>
-      </div>
-      <div class="why-card">
-        <div class="w-icon"><i class="fas fa-book-open"></i></div>
-        <h5>Updated Syllabus</h5>
-      </div>
-      <div class="why-card">
-        <div class="w-icon"><i class="fas fa-project-diagram"></i></div>
-        <h5>Work On Live Projects</h5>
-      </div>
-      <div class="why-card">
-        <div class="w-icon"><i class="fas fa-medal"></i></div>
-        <h5>Earn a Global Certificate</h5>
-      </div>
-      <div class="why-card">
-        <div class="w-icon"><i class="fas fa-file-alt"></i></div>
-        <h5>Resume & Interview Preparation</h5>
-      </div>
-      <div class="why-card">
-        <div class="w-icon"><i class="fas fa-handshake"></i></div>
-        <h5>Placement Support</h5>
-      </div>
-      <div class="why-card">
-        <div class="w-icon"><i class="fas fa-infinity"></i></div>
-        <h5>Lifetime Study Material</h5>
-      </div>
-      <div class="why-card">
-        <div class="w-icon"><i class="fas fa-desktop"></i></div>
-        <h5>Classroom | Online Training</h5>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="section">
-  <div class="container">
-    <div class="section-header fade-up">
-      <h2>Students Testimonials</h2>
-      <p>Hear what our successful students have to say about their learning journey</p>
-      <div class="underline"></div>
-    </div>
-    <div class="testimonials-grid fade-up">
-      <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p class="testimonial-text">*******</p>
-        <div class="testimonial-author">
-          <div class="t-avatar">GC</div>
-          <div>
-            <div class="t-name">-----</div>
-            <div class="t-source">Google Review</div>
+        </li>
+        <li><a href="#">Reviews</a></li>
+        <li>
+          <a href="#">Students Zone <i class="fas fa-chevron-down" style="font-size:10px;"></i></a>
+          <div class="dropdown">
+            <a href="#">Blog</a>
+            <a href="#">Projects</a>
+            <a href="#">Interview Questions</a>
+            <a href="#">Tutorials</a>
+            <a href="#">Resumes</a>
+            <a href="#">Downloads</a>
           </div>
-        </div>
-      </div>
-</section>
+        </li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#" class="btn-enroll" onclick="openDemoModal();return false;">Enroll Now</a></li>
+      </ul>
+      <div class="hamburger" onclick="openMobileNav()"><i class="fas fa-bars"></i></div>
+    </div>
+  </nav>
 
-<!-- CTA BAND -->
-<div class="cta-band fade-up">
-  <h2>100% Placement Assistance</h2>
-  <p>We offer flexible and cost-effective Training Courses with guaranteed placement support</p>
-  <p style="font-size:18px;font-weight:800;color:var(--accent);margin-bottom:28px;">365 Days Placement Support & Quality Training</p>
-  <p style="font-weight:700;margin-bottom:20px;opacity:.9;">Don't waste time!! Enroll Now and start your bright future!</p>
-  <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;align-items:center;">
-    <a href="tel:+919642367632" class="btn-primary"><i class="fas fa-phone"></i> +91 9393 0808 05</a>
-    <a href="#" class="btn-outline">Enroll for Free Demo</a>
-  </div>
-</div>
-
-<!-- APPROACH -->
-<section class="section section-alt">
-  <div class="container">
-    <div class="section-header fade-up">
-      <h2>Our Training & Placement Approach</h2>
-      <p>A structured, practical, and job-oriented methodology for real-world success</p>
-      <div class="underline"></div>
-    </div>
-    <div class="approach-grid fade-up">
-      <div class="approach-card"><div class="step-num">1</div><h5>Theory</h5></div>
-      <div class="approach-card"><div class="step-num">2</div><h5>Project Work</h5></div>
-      <div class="approach-card"><div class="step-num">3</div><h5>Assignments</h5></div>
-      <div class="approach-card"><div class="step-num">4</div><h5>Certification</h5></div>
-      <div class="approach-card"><div class="step-num">5</div><h5>Resume Preparation</h5></div>
-      <div class="approach-card"><div class="step-num">6</div><h5>Interview Preparation</h5></div>
-      <div class="approach-card"><div class="step-num">7</div><h5>Resume Marketing</h5></div>
-      <div class="approach-card"><div class="step-num">8</div><h5>Placement Support</h5></div>
-    </div>
-  </div>
-</section>
-
-<!-- BLOG -->
-<section class="section">
-  <div class="container">
-    <div class="section-header fade-up">
-      <h2>Our Recent Activities</h2>
-      <p>Stay updated with the latest trends, tutorials, and insights from our experts</p>
-      <div class="underline"></div>
-    </div>
-    <div class="blog-grid fade-up">
-      <div class="blog-card">
-        <div class="blog-img">🧪</div>
-        <div class="blog-content">
-          <div class="blog-cat">Testing</div>
-          <h4>What is Non-Functional Testing?</h4>
-          <p>Learn everything about non-functional testing — performance, load, stress, and more in this comprehensive guide.</p>
-          <a href="#" class="blog-link">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-img">💨</div>
-        <div class="blog-content">
-          <div class="blog-cat">Testing</div>
-          <h4>What is Smoke Testing? Everything You Need to Know</h4>
-          <p>Strengthen your QA process by understanding when and why to use smoke testing in your test strategy.</p>
-          <a href="#" class="blog-link">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-img">📋</div>
-        <div class="blog-content">
-          <div class="blog-cat">QA</div>
-          <h4>What Types of Test Cases Are Not Included in Code Coverage?</h4>
-          <p>Understand which test cases fall outside code coverage and why they still matter for quality assurance.</p>
-          <a href="#" class="blog-link">Read More →</a>
-        </div>
-      </div>
-    </div>
-    <div style="text-align:center;margin-top:36px;">
-      <a href="#" class="btn-primary">View More Articles</a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-grid">
-    <div class="footer-col">
-      <div class="logo-text" style="color:#fff;margin-bottom:14px;font-size:22px;"><span style="color:var(--primary);">Intelexa</span> Technologies</div>
-      <p>Intelexa Technologies was established by a team of enthusiastic industry professionals with the vision of providing IT training to fill the gap between industry requirement and learning.</p>
-      <div class="social-links">
-        <a href="https://in.linkedin.com/company/Intelexatech" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.facebook.com/Intelexatech" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.youtube.com/Intelexatech" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.instagram.com/Intelexatech/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com/Intelexatech" target="_blank"><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-    <div class="footer-col">
-      <h5>Company</h5>
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav" onclick="closeMobileNavOutside(event)">
+    <div class="mobile-nav-panel">
+      <div class="close-mobile" onclick="closeMobileNav()"><i class="fas fa-times"></i></div>
       <ul>
-        <li><a href="#">All Courses</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Our Team</a></li>
-        <li><a href="#">Placements</a></li>
-        <li><a href="#">Trainees Succeeded</a></li>
-        <li><a href="#">Trainees Placed In</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ds-course.html">Data Science with Gen AI</a></li>
         <li><a href="#">Reviews</a></li>
         <li><a href="#">Contact Us</a></li>
+        <li><a href="#" style="color:var(--primary);" onclick="openDemoModal();return false;">Enroll Now</a></li>
       </ul>
-    </div>
-    <div class="footer-col">
-      <h5>Discover</h5>
-      <ul>
-        <li><a href="#">Intelexa Projects</a></li>
-        <li><a href="#">Download Links</a></li>
-        <li><a href="#">Sample Resumes</a></li>
-        <li><a href="#">Intelexa Blog</a></li>
-        <li><a href="#">Video Tutorials</a></li>
-        <li><a href="#">Job Updates</a></li>
-        <li><a href="#">Q & A</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h5>Work with Us</h5>
-      <ul>
-        <li><a href="#">Become an Instructor</a></li>
-        <li><a href="#">Corporate Training</a></li>
-        <li><a href="#">Franchise Enquiry</a></li>
-        <li><a href="#">Hire from Intelexa</a></li>
-        <li><a href="#">Staffing</a></li>
-      </ul>
-    </div>
-    <div class="footer-col footer-contact">
-      <h5>Contact Us</h5>
-      <a href="tel:+919154112233"><i class="fas fa-phone" style="color:var(--accent);"></i> +91 93 93 08 08 05</a>
-      <a href="tel:+919154123123"><i class="fas fa-phone" style="color:var(--accent);"></i> +91 93 93 08 08 05</a>
-      <a href="/cdn-cgi/l/email-protection#70191e161f30391e04151c150811041513185e131f1d"><i class="fas fa-envelope" style="color:var(--accent);"></i> <span class="__cf_email__" data-cfemail="40292e262f00092e34252c253821342523286e232f2d">[email&#160;protected]</span></a>
-      <a href="#"><i class="fas fa-map-marker-alt" style="color:var(--accent);"></i> Ameerpet, Hyderabad</a>
-      <a href="#"><i class="fas fa-map-marker-alt" style="color:var(--accent);"></i> Toronto, Canada</a>
-	  <a href="#"><i class="fas fa-map-marker-alt" style="color:var(--accent);"></i> Dallas, US</a>
-      <a href="https://wa.me/919642367632" style="color:#25d366;margin-top:12px;font-weight:700;">
-        <i class="fab fa-whatsapp"></i> WhatsApp Chat
-      </a>
     </div>
   </div>
-  <div class="footer-bottom">
-    <span>Copyright © 2025 Intelexa Technologies. All Rights Reserved.</span>
-    <div style="display:flex;gap:16px;">
-      <a href="#" style="color:rgba(255,255,255,0.5);">Terms & Conditions</a>
-      <a href="#" style="color:rgba(255,255,255,0.5);">Privacy Policy</a>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <span class="hero-badge">🏆 India's #1 IT Training Institute</span>
+        <h1>Learn IT With <span>Confidence and Hands-On Practicals</span> &amp; Land Your Dream Job</h1>
+        <p>Intelexa Technologies is a leading provider of comprehensive IT training programs. Our industry experts equip
+          you with the skills needed to excel in today's competitive job market.</p>
+        <div class="hero-tags">
+          <span class="hero-tag">Onsite Training</span>
+          <span class="hero-tag">Online Training</span>
+          <span class="hero-tag">Live Projects</span>
+          <span class="hero-tag">Placement Support</span>
+        </div>
+        <div class="hero-btns">
+          <a href="#" class="btn-primary" onclick="openDemoModal();return false;">Register for Free Demo</a>
+          <a href="ds-course.html" class="btn-outline">Explore Course</a>
+        </div>
+      </div>
+      <div class="hero-form-wrap">
+        <div class="hero-form">
+          <h3>🎓 Enroll for Free Demo</h3>
+          <div class="form-group">
+            <input type="text" id="h-name" placeholder="Your Full Name *" autocomplete="name">
+          </div>
+          <div class="form-group">
+            <input type="tel" id="h-phone" placeholder="Mobile Number *" autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <input type="email" id="h-email" placeholder="Email Address *" autocomplete="email">
+          </div>
+          <div class="form-group">
+            <select id="h-mode">
+              <option value="">Training Mode</option>
+              <option>Classroom — Hyderabad</option>
+              <option>Live Online</option>
+              <option>Self-Paced Videos</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="date" id="h-date" style="color:var(--text);" required>
+          </div>
+          <div class="form-group">
+            <select id="h-time" required>
+              <option value="">Select Available Time Slot *</option>
+              <option>08:00 AM – 09:30 AM</option>
+              <option>10:00 AM – 11:30 AM</option>
+              <option>12:00 PM – 01:30 PM</option>
+              <option>02:00 PM – 03:30 PM</option>
+              <option>04:00 PM – 05:30 PM</option>
+              <option>06:00 PM – 07:30 PM</option>
+              <option>07:30 PM – 09:00 PM</option>
+            </select>
+          </div>
+          <button class="form-submit" id="heroSubmitBtn">Enroll for Free Demo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="stats-container">
+      <div class="stat-item"><span class="stat-num">30K+</span><span class="stat-label">Students Trained</span></div>
+      <div class="stat-item"><span class="stat-num">20K+</span><span class="stat-label">Students Placed</span></div>
+      <div class="stat-item"><span class="stat-num">350K+</span><span class="stat-label">Placement Tie-ups</span></div>
+      <div class="stat-item"><span class="stat-num">30K+</span><span class="stat-label">Recruitment Drives /
+          Month</span></div>
+      <div class="stat-item"><span class="stat-num">365</span><span class="stat-label">Days Placement Support</span>
+      </div>
     </div>
   </div>
-</footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // Scroll animation
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('visible'); }
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div style="display:flex;gap:50px;flex-wrap:wrap;align-items:center;">
+        <div style="flex:1;min-width:280px;" class="fade-up">
+          <span
+            style="color:var(--primary);font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:1px;">About
+            Intelexa</span>
+          <h2 style="font-size:clamp(22px,3vw,34px);font-weight:900;color:var(--secondary);margin:10px 0 18px;">
+            Intelexa, The Best Software Training Institute in India</h2>
+          <p style="color:var(--text-light);font-size:15px;line-height:1.8;margin-bottom:16px;"><strong
+              style="color:var(--secondary);">Our Experience Your Winning Edge.</strong></p>
+          <p style="color:var(--text-light);font-size:15px;line-height:1.8;margin-bottom:16px;">Intelexa Technologies is
+            a leading provider of comprehensive IT training programs, specializing in in-demand areas like QA Software
+            Testing, Full Stack Web Development, DevOps & Multi-Cloud, and Playwright Automation Testing.</p>
+          <p style="color:var(--text-light);font-size:15px;line-height:1.8;margin-bottom:24px;">Our expertly designed
+            courses are delivered by industry professionals and equip students with the skills needed to excel in
+            today's competitive job market.</p>
+          <a href="#" class="btn-primary">Know More</a>
+        </div>
+        <div style="flex:0 0 360px;min-width:280px;" class="fade-up">
+          <div style="background:var(--light-bg);border-radius:16px;padding:28px;">
+            <h4 style="font-size:17px;font-weight:800;color:var(--secondary);margin-bottom:20px;">Our Training Approach
+            </h4>
+            <div style="display:flex;flex-direction:column;gap:12px;">
+              <div
+                style="display:flex;align-items:center;gap:14px;background:#fff;padding:14px 18px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+                <div
+                  style="width:32px;height:32px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;flex-shrink:0;">
+                  1</div>
+                <div><strong style="color:var(--secondary);">Theory</strong> – Comprehensive conceptual understanding
+                </div>
+              </div>
+              <div
+                style="display:flex;align-items:center;gap:14px;background:#fff;padding:14px 18px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+                <div
+                  style="width:32px;height:32px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;flex-shrink:0;">
+                  2</div>
+                <div><strong style="color:var(--secondary);">Project Work</strong> – Hands-on live projects</div>
+              </div>
+              <div
+                style="display:flex;align-items:center;gap:14px;background:#fff;padding:14px 18px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+                <div
+                  style="width:32px;height:32px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;flex-shrink:0;">
+                  3</div>
+                <div><strong style="color:var(--secondary);">Certifications</strong> – Industry-recognized certs</div>
+              </div>
+              <div
+                style="display:flex;align-items:center;gap:14px;background:#fff;padding:14px 18px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+                <div
+                  style="width:32px;height:32px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;flex-shrink:0;">
+                  4</div>
+                <div><strong style="color:var(--secondary);">Placement Support</strong> – 365 days assistance</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSE -->
+  <section class="section section-alt" id="courses">
+    <div class="container">
+      <div class="section-header fade-up">
+        <h2>Our Flagship Course</h2>
+        <p>Industry-leading Data Science program designed by a PhD expert — from Python to Agentic AI</p>
+        <div class="underline"></div>
+      </div>
+      <div class="fade-up" style="display:flex;justify-content:center;">
+        <div class="course-card" onclick="window.location.href='ds-course.html'"
+          style="border:2px solid var(--primary);position:relative;cursor:pointer;max-width:320px;width:100%;"
+          tabindex="0" role="link" aria-label="Data Science with GenAI and Agentic AI course page"
+          onkeydown="if(event.key==='Enter')window.location.href='ds-course.html'">
+          <span
+            style="position:absolute;top:10px;right:10px;background:var(--accent);color:#fff;font-size:10px;font-weight:900;padding:2px 8px;border-radius:20px;letter-spacing:.5px;">⭐
+            FEATURED</span>
+          <div class="course-icon" style="background:linear-gradient(135deg,#1a2a4a,#3a5a9a);"><i
+              class="fas fa-brain"></i></div>
+          <h4>Data Science with Gen AI</h4>
+          <span class="course-cat">Data Science &middot; AI</span>
+          <p style="font-size:13px;color:var(--text-light);margin-top:10px;line-height:1.5;">Python &rarr; ML &rarr; DL
+            &rarr; NLP &rarr; CV &rarr; Gen AI &rarr; Agentic AI &rarr; MLOps</p>
+          <a href="ds-course.html" class="btn-primary"
+            style="display:inline-block;margin-top:14px;font-size:13px;padding:10px 20px;">View Full Curriculum</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE REMOVED -->
+  <section class="section" style="display:none;">
+    <div class="container">
+      <div class="section-header fade-up">
+        <h2>Training Schedule</h2>
+      </div>
+      <div class="table-wrap fade-up">
+        <table>
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>Start Date</th>
+              <th>Timings</th>
+              <th>Duration</th>
+              <th>Trainer</th>
+              <th>Mode</th>
+              <th>Curriculum</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Full Stack Java/Python with AI</strong></td>
+              <td>10-Mar-2026</td>
+              <td>10:00 AM – 11:30 AM</td>
+              <td>4 Months</td>
+              <td>Mr. Venkateswarlu</td>
+              <td><span class="badge-mode">Online / Offline</span></td>
+              <td><a href="#" class="btn-sm btn-sm-outline">Download</a></td>
+              <td><a href="#" class="btn-sm btn-sm-primary">Register</a></td>
+            </tr>
+            <tr>
+              <td><strong>Data Science with GenAI &amp; Agentic AI</strong></td>
+              <td>15-May-2026</td>
+              <td>08:00 AM – 09:30 AM</td>
+              <td>6 Months</td>
+              <td>Y. Sri Ram | PhD</td>
+              <td><span class="badge-mode">Online / Offline</span></td>
+              <td><a href="ds-course.html" class="btn-sm btn-sm-outline">Download</a></td>
+              <td><a href="ds-course.html" class="btn-sm btn-sm-primary">Register</a></td>
+            </tr>
+            <tr>
+              <td><strong>Full Stack Software Testing with AI</strong></td>
+              <td>20-May-2026</td>
+              <td>06:00 PM – 07:30 PM</td>
+              <td>3 Months</td>
+              <td>Mr. Ramesh Kumar</td>
+              <td><span class="badge-mode">Online / Offline</span></td>
+              <td><a href="#" class="btn-sm btn-sm-outline">Download</a></td>
+              <td><a href="#" class="btn-sm btn-sm-primary">Register</a></td>
+            </tr>
+            <tr>
+              <td><strong>DevOps with Multi-Cloud and AI</strong></td>
+              <td>01-Jun-2026</td>
+              <td>07:00 AM – 08:30 AM</td>
+              <td>4 Months</td>
+              <td>Mr. Venkateswarlu</td>
+              <td><span class="badge-mode">Online / Offline</span></td>
+              <td><a href="#" class="btn-sm btn-sm-outline">Download</a></td>
+              <td><a href="#" class="btn-sm btn-sm-primary">Register</a></td>
+            </tr>
+            <tr>
+              <td><strong>Playwright Automation Testing</strong></td>
+              <td>05-Jun-2026</td>
+              <td>05:00 PM – 06:30 PM</td>
+              <td>3 Months</td>
+              <td>Mr. Ramesh Kumar</td>
+              <td><span class="badge-mode">Online / Offline</span></td>
+              <td><a href="#" class="btn-sm btn-sm-outline">Download</a></td>
+              <td><a href="#" class="btn-sm btn-sm-primary">Register</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTRUCTORS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header fade-up">
+        <h2>Our Prime Instructors</h2>
+        <p>Learn from experienced industry professionals with real-world expertise</p>
+        <div class="underline"></div>
+      </div>
+      <div class="instructors-grid fade-up" style="justify-content:center;">
+        <div class="instructor-card" style="max-width:280px;">
+          <div class="instructor-avatar">SR</div>
+          <h4>Y. Sri Ram</h4>
+          <p>PhD · Data Science &amp; AI<br>15+ Years Experience</p>
+          <a href="ds-course.html" class="btn-view-profile">View Profile</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINING OPTIONS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <h2>Training Options</h2>
+        <p>Choose the learning format that works best for you</p>
+        <div class="underline"></div>
+      </div>
+      <div class="training-grid fade-up">
+        <div class="training-card">
+          <div class="t-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <h4>Classroom Training</h4>
+          <p>Learn in spacious classrooms with in-person interaction training by industry experts.</p>
+        </div>
+        <div class="training-card">
+          <div class="t-icon"><i class="fas fa-laptop"></i></div>
+          <h4>Live Online Training</h4>
+          <p>Attend classes from any place, at any time, as per your convenience and schedule.</p>
+        </div>
+        <div class="training-card">
+          <div class="t-icon"><i class="fas fa-video"></i></div>
+          <h4>Self-Paced Video Learning</h4>
+          <p>Learn end-to-end course content similar to instructor-led virtual or classroom training.</p>
+        </div>
+        <div class="training-card">
+          <div class="t-icon"><i class="fas fa-building"></i></div>
+          <h4>Corporate Training</h4>
+          <p>Skill your workforce in new-age technologies with our cutting-edge curriculum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header fade-up">
+        <h2>Why Choose Intelexa Technologies</h2>
+        <p>What sets us apart from every other training institute</p>
+        <div class="underline"></div>
+      </div>
+      <div class="why-grid fade-up">
+        <div class="why-card">
+          <div class="w-icon"><i class="fas fa-user-tie"></i></div>
+          <h5>Real Time Professionals</h5>
+        </div>
+        <div class="why-card">
+          <div class="w-icon"><i class="fas fa-book-open"></i></div>
+          <h5>Updated Syllabus</h5>
+        </div>
+        <div class="why-card">
+          <div class="w-icon"><i class="fas fa-project-diagram"></i></div>
+          <h5>Work On Live Projects</h5>
+        </div>
+        <div class="why-card">
+          <div class="w-icon"><i class="fas fa-medal"></i></div>
+          <h5>Earn a Global Certificate</h5>
+        </div>
+        <div class="why-card">
+          <div class="w-icon"><i class="fas fa-file-alt"></i></div>
+          <h5>Resume & Interview Preparation</h5>
+        </div>
+        <div class="why-card">
+          <div class="w-icon"><i class="fas fa-handshake"></i></div>
+          <h5>Placement Support</h5>
+        </div>
+        <div class="why-card">
+          <div class="w-icon"><i class="fas fa-infinity"></i></div>
+          <h5>Lifetime Study Material</h5>
+        </div>
+        <div class="why-card">
+          <div class="w-icon"><i class="fas fa-desktop"></i></div>
+          <h5>Classroom | Online Training</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <h2>Students Testimonials</h2>
+        <p>Hear what our successful students have to say about their learning journey</p>
+        <div class="underline"></div>
+      </div>
+      <div class="testimonials-grid fade-up">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">Intelexa Technologies truly changed my career. The Data Science course with Sri
+            Ram sir was exceptional — real projects, interview prep, and 100% placement support. Got placed in an MNC
+            within 2 months of completing the course!</p>
+          <div class="testimonial-author">
+            <div class="t-avatar">GC</div>
+            <div>
+              <div class="t-name">Gowtham Chandra</div>
+              <div class="t-source">Google Review · Data Science Batch</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">Best institute for Selenium and Playwright automation testing. The trainer has
+            hands-on industry experience, the curriculum is up to date, and placement support was outstanding. Highly
+            recommended for freshers and working professionals.</p>
+          <div class="testimonial-author">
+            <div class="t-avatar">PV</div>
+            <div>
+              <div class="t-name">Pavani Varma</div>
+              <div class="t-source">Google Review · QA Automation Batch</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">I joined the Java Full Stack with AI course and it was a game-changer. The
+            trainers are real-time professionals, and the live projects gave me the confidence to crack interviews.
+            Landed a job at a top IT firm within 3 months!</p>
+          <div class="testimonial-author">
+            <div class="t-avatar">SR</div>
+            <div>
+              <div class="t-name">Suresh Reddy</div>
+              <div class="t-source">Google Review · Java Full Stack Batch</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <div class="cta-band fade-up">
+    <h2>100% Placement Assistance</h2>
+    <p>We offer flexible and cost-effective Training Courses with guaranteed placement support</p>
+    <p style="font-size:18px;font-weight:800;color:var(--accent);margin-bottom:28px;">365 Days Placement Support &
+      Quality Training</p>
+    <p style="font-weight:700;margin-bottom:20px;opacity:.9;">Don't waste time!! Enroll Now and start your bright
+      future!</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;align-items:center;">
+      <a href="tel:+918008594755" class="btn-primary"><i class="fas fa-phone"></i> +91 8008594755</a>
+      <a href="#" class="btn-outline" onclick="openDemoModal();return false;">Enroll for Free Demo</a>
+    </div>
+  </div>
+
+  <!-- APPROACH -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header fade-up">
+        <h2>Our Training & Placement Approach</h2>
+        <p>A structured, practical, and job-oriented methodology for real-world success</p>
+        <div class="underline"></div>
+      </div>
+      <div class="approach-grid fade-up">
+        <div class="approach-card">
+          <div class="step-num">1</div>
+          <h5>Theory</h5>
+        </div>
+        <div class="approach-card">
+          <div class="step-num">2</div>
+          <h5>Project Work</h5>
+        </div>
+        <div class="approach-card">
+          <div class="step-num">3</div>
+          <h5>Assignments</h5>
+        </div>
+        <div class="approach-card">
+          <div class="step-num">4</div>
+          <h5>Certification</h5>
+        </div>
+        <div class="approach-card">
+          <div class="step-num">5</div>
+          <h5>Resume Preparation</h5>
+        </div>
+        <div class="approach-card">
+          <div class="step-num">6</div>
+          <h5>Interview Preparation</h5>
+        </div>
+        <div class="approach-card">
+          <div class="step-num">7</div>
+          <h5>Resume Marketing</h5>
+        </div>
+        <div class="approach-card">
+          <div class="step-num">8</div>
+          <h5>Placement Support</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <h2>Our Recent Activities</h2>
+        <p>Stay updated with the latest trends, tutorials, and insights from our experts</p>
+        <div class="underline"></div>
+      </div>
+      <div class="blog-grid fade-up">
+        <div class="blog-card">
+          <div class="blog-img">🧪</div>
+          <div class="blog-content">
+            <div class="blog-cat">Testing</div>
+            <h4>What is Non-Functional Testing?</h4>
+            <p>Learn everything about non-functional testing — performance, load, stress, and more in this comprehensive
+              guide.</p>
+            <a href="#" class="blog-link">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-img">💨</div>
+          <div class="blog-content">
+            <div class="blog-cat">Testing</div>
+            <h4>What is Smoke Testing? Everything You Need to Know</h4>
+            <p>Strengthen your QA process by understanding when and why to use smoke testing in your test strategy.</p>
+            <a href="#" class="blog-link">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-img">📋</div>
+          <div class="blog-content">
+            <div class="blog-cat">QA</div>
+            <h4>What Types of Test Cases Are Not Included in Code Coverage?</h4>
+            <p>Understand which test cases fall outside code coverage and why they still matter for quality assurance.
+            </p>
+            <a href="#" class="blog-link">Read More →</a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:36px;">
+        <a href="#" class="btn-primary">View More Articles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="logo-text" style="color:#fff;margin-bottom:14px;font-size:22px;"><span
+            style="color:var(--primary);">Intelexa</span> Technologies</div>
+        <p>Intelexa Technologies was established by a team of enthusiastic industry professionals with the vision of
+          providing IT training to fill the gap between industry requirement and learning.</p>
+        <div class="social-links">
+          <a href="https://in.linkedin.com/company/Intelexatech" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/Intelexatech" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.youtube.com/Intelexatech" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/Intelexatech/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/Intelexatech" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">All Courses</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Placements</a></li>
+          <li><a href="#">Trainees Succeeded</a></li>
+          <li><a href="#">Trainees Placed In</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Discover</h5>
+        <ul>
+          <li><a href="#">Intelexa Projects</a></li>
+          <li><a href="#">Download Links</a></li>
+          <li><a href="#">Sample Resumes</a></li>
+          <li><a href="#">Intelexa Blog</a></li>
+          <li><a href="#">Video Tutorials</a></li>
+          <li><a href="#">Job Updates</a></li>
+          <li><a href="#">Q & A</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Work with Us</h5>
+        <ul>
+          <li><a href="#">Become an Instructor</a></li>
+          <li><a href="#">Corporate Training</a></li>
+          <li><a href="#">Franchise Enquiry</a></li>
+          <li><a href="#">Hire from Intelexa</a></li>
+          <li><a href="#">Staffing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h5>Contact Us</h5>
+        <a href="tel:+918008594755"><i class="fas fa-phone" style="color:var(--accent);"></i> +91 80 08 59 47 55</a>
+        <a href="tel:+12899014184"><i class="fas fa-phone" style="color:var(--accent);"></i> +1 289 901 4184
+          (Canada)</a>
+        <a href="mailto:info@intelexatech.com"><i class="fas fa-envelope" style="color:var(--accent);"></i>
+          info@intelexatech.com</a>
+        <a href="#"><i class="fas fa-map-marker-alt" style="color:var(--accent);"></i> Ameerpet, Hyderabad</a>
+        <a href="#"><i class="fas fa-map-marker-alt" style="color:var(--accent);"></i> Toronto, Canada</a>
+        <a href="#"><i class="fas fa-map-marker-alt" style="color:var(--accent);"></i> Dallas, US</a>
+        <a href="https://wa.me/918008594755" style="color:#25d366;margin-top:12px;font-weight:700;">
+          <i class="fab fa-whatsapp"></i> WhatsApp Chat
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Copyright © 2026 Intelexa Technologies. All Rights Reserved.</span>
+      <div style="display:flex;gap:16px;">
+        <a href="#" style="color:rgba(255,255,255,0.5);">Terms & Conditions</a>
+        <a href="#" style="color:rgba(255,255,255,0.5);">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DEMO MODAL -->
+  <div class="demo-modal-overlay" id="demoModal" onclick="closeDemoModalOutside(event)">
+    <div class="demo-modal">
+      <button class="modal-close" onclick="closeDemoModal()" aria-label="Close">&times;</button>
+      <h3>🎓 Enroll for Free Demo</h3>
+      <p class="modal-sub">Free counselling &amp; demo class — no commitment</p>
+      <div class="form-group">
+        <input type="text" id="m-name" placeholder="Your Full Name *" autocomplete="name">
+      </div>
+      <div class="form-group">
+        <input type="tel" id="m-phone" placeholder="Mobile Number *" autocomplete="tel">
+      </div>
+      <div class="form-group">
+        <input type="email" id="m-email" placeholder="Email Address *" autocomplete="email">
+      </div>
+      <div class="form-group">
+        <select id="m-mode">
+          <option value="">Select Training Mode</option>
+          <option>Classroom — Hyderabad</option>
+          <option>Live Online</option>
+          <option>Self-Paced Videos</option>
+          <option>Corporate Training</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="date" id="m-date" min="" style="color:var(--text);" required>
+      </div>
+      <div class="form-group">
+        <select id="m-time" required>
+          <option value="">Select Available Time Slot *</option>
+          <option>08:00 AM – 09:30 AM</option>
+          <option>10:00 AM – 11:30 AM</option>
+          <option>12:00 PM – 01:30 PM</option>
+          <option>02:00 PM – 03:30 PM</option>
+          <option>04:00 PM – 05:30 PM</option>
+          <option>06:00 PM – 07:30 PM</option>
+          <option>07:30 PM – 09:00 PM</option>
+        </select>
+      </div>
+      <button class="modal-submit" id="modalSubmitBtn" onclick="submitDemoModal()">Register for Free Demo</button>
+      <p class="modal-note">🔒 Your data is 100% safe — no spam, ever.</p>
+    </div>
+  </div>
+
+  <a href="https://wa.me/918008594755"
+    style="position:fixed;bottom:26px;right:26px;z-index:500;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:27px;box-shadow:0 4px 20px rgba(37,211,102,0.55);transition:transform .2s;text-decoration:none;"
+    target="_blank" rel="noopener" aria-label="Chat on WhatsApp" onmouseover="this.style.transform='scale(1.12)'"
+    onmouseout="this.style.transform='scale(1)'">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>
+    // Scroll animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Mobile nav
+    function openMobileNav() { document.getElementById('mobileNav').classList.add('open'); }
+    function closeMobileNav() { document.getElementById('mobileNav').classList.remove('open'); }
+    function closeMobileNavOutside(e) {
+      if (e.target === document.getElementById('mobileNav')) closeMobileNav();
+    }
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
     });
-  }, { threshold: 0.08 });
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-  // Mobile nav
-  function openMobileNav() { document.getElementById('mobileNav').classList.add('open'); }
-  function closeMobileNav() { document.getElementById('mobileNav').classList.remove('open'); }
-  function closeMobileNavOutside(e) {
-    if (e.target === document.getElementById('mobileNav')) closeMobileNav();
-  }
+    // Animate stat numbers
+    function animateCounters() {
+      document.querySelectorAll('.stat-num').forEach(el => {
+        const text = el.textContent;
+        const num = parseFloat(text.replace(/[^0-9.]/g, ''));
+        const suffix = text.replace(/[0-9.]/g, '');
+        let start = 0;
+        const step = num / 60;
+        const timer = setInterval(() => {
+          start += step;
+          if (start >= num) { start = num; clearInterval(timer); }
+          el.textContent = (Number.isInteger(num)
+            ? Math.round(start)
+            : start.toFixed(1)) + suffix;
+        }, 16);
+      });
+    }
+    // Trigger counter animation when stats bar enters viewport
+    const statsObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { animateCounters(); statsObs.disconnect(); } });
+    }, { threshold: 0.3 });
+    const statsBar = document.querySelector('.stats-bar');
+    if (statsBar) statsObs.observe(statsBar);
 
-  // Smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      const target = document.querySelector(a.getAttribute('href'));
-      if (target) { e.preventDefault(); target.scrollIntoView({behavior:'smooth'}); }
+    // WhatsApp number
+    const WA_NUMBER = '918008594755';
+    function buildWAMsg(fields) {
+      return encodeURIComponent(
+        '\uD83C\uDF93 New Demo Request \u2014 Intelexa Technologies\n' +
+        '\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n' +
+        fields.map(function (f) { return f[0] + ': ' + f[1]; }).join('\n') +
+        '\n\uD83D\uDCDE Please contact the student for confirmation.'
+      );
+    }
+
+    // Set min date for hero form
+    document.addEventListener('DOMContentLoaded', function () {
+      var hd = document.getElementById('h-date');
+      if (hd) hd.min = new Date().toISOString().split('T')[0];
+      var md = document.getElementById('m-date');
+      if (md) md.min = new Date().toISOString().split('T')[0];
     });
-  });
 
-  // Animate stat numbers
-  function animateCounters() {
-    document.querySelectorAll('.stat-num').forEach(el => {
-      const text = el.textContent;
-      const num = parseFloat(text.replace(/[^0-9.]/g, ''));
-      const suffix = text.replace(/[0-9.]/g, '');
-      let start = 0;
-      const step = num / 60;
-      const timer = setInterval(() => {
-        start += step;
-        if (start >= num) { start = num; clearInterval(timer); }
-        el.textContent = (Number.isInteger(num) 
+    // Hero form submit → WhatsApp
+    document.getElementById('heroSubmitBtn').addEventListener('click', function () {
+      var name = document.getElementById('h-name').value.trim();
+      var phone = document.getElementById('h-phone').value.trim();
+      var email = document.getElementById('h-email').value.trim();
+      var mode = document.getElementById('h-mode').value;
+      var date = document.getElementById('h-date').value;
+      var time = document.getElementById('h-time').value;
+      if (!name || !phone || !email) {
+        alert('Please fill in your name, phone, and email to continue.');
+        return;
+      }
+      if (!date || !time) {
+        alert('Please select your preferred demo date and time slot.');
+        return;
+      }
+      var msg = buildWAMsg([
+        ['\uD83D\uDC64 Name', name],
+        ['\uD83D\uDCF1 Phone', phone],
+        ['\uD83D\uDCE7 Email', email],
+        ['\uD83D\uDDB5 Mode', mode || 'Not selected'],
+        ['\uD83D\uDCC5 Date', date],
+        ['\u23F0 Time', time]
+      ]);
+      window.open('https://wa.me/' + WA_NUMBER + '?text=' + msg, '_blank');
+      this.textContent = '\u2713 Redirecting to WhatsApp...';
+      this.style.background = '#25d366';
+      this.disabled = true;
+    });
+
+    // Modal functions
+    function openDemoModal() {
+      document.getElementById('demoModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeDemoModal() {
+      document.getElementById('demoModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    function closeDemoModalOutside(e) {
+      if (e.target === document.getElementById('demoModal')) closeDemoModal();
+    }
+
+    // Modal submit → WhatsApp
+    function submitDemoModal() {
+      var name = document.getElementById('m-name').value.trim();
+      var phone = document.getElementById('m-phone').value.trim();
+      var email = document.getElementById('m-email').value.trim();
+      var mode = document.getElementById('m-mode').value;
+      var date = document.getElementById('m-date').value;
+      var time = document.getElementById('m-time').value;
+      if (!name || !phone || !email) {
+        alert('Please fill in your name, phone, and email to continue.');
+        return;
+      }
+      if (!date || !time) {
+        alert('Please select your preferred demo date and time slot.');
+        return;
+      }
+      var msg = buildWAMsg([
+        ['\uD83D\uDC64 Name', name],
+        ['\uD83D\uDCF1 Phone', phone],
+        ['\uD83D\uDCE7 Email', email],
+        ['\uD83D\uDDB5 Mode', mode || 'Not selected'],
+        ['\uD83D\uDCC5 Date', date],
+        ['\u23F0 Time', time]
+      ]);
+      window.open('https://wa.me/' + WA_NUMBER + '?text=' + msg, '_blank');
+      var btn = document.getElementById('modalSubmitBtn');
+      btn.textContent = '\u2713 Redirecting to WhatsApp...';
+      btn.style.background = '#25d366';
+      btn.disabled = true;
+      setTimeout(closeDemoModal, 2500);
+    }
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeDemoModal(); });
+  </script>
+</body>
+
+</html>
