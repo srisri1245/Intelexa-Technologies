@@ -175,6 +175,26 @@ footer{padding:12vh clamp(18px,6vw,90px) 40px;background:var(--bg);overflow:hidd
 .fgrid h4{color:var(--ink);font-size:.75rem;letter-spacing:.24em;text-transform:uppercase;margin-bottom:14px}
 .fgrid a{display:block;margin:6px 0}.fgrid a:hover{color:var(--accent)}
 .big{font-size:clamp(3rem,15vw,15rem);font-weight:800;letter-spacing:-.05em;line-height:.9;margin-top:8vh;color:transparent;-webkit-text-stroke:1px var(--line);white-space:nowrap}
+
+/* footer word: letters light up left to right, hold, then clear and repeat */
+.big span{display:inline-block;animation:bigfill 11s ease-in-out infinite;animation-play-state:paused}
+.big.run span{animation-play-state:running}
+.big span:nth-child(1){animation-name:bf0}
+@keyframes bf0{0%,2%{color:transparent;-webkit-text-fill-color:transparent;text-shadow:none}7%,78%{color:#3ddc97;-webkit-text-fill-color:#3ddc97;text-shadow:0 0 28px #3ddc9766}84%,100%{color:transparent;-webkit-text-fill-color:transparent;text-shadow:none}}
+.big span:nth-child(2){animation-name:bf1}
+@keyframes bf1{0%,8%{color:transparent;-webkit-text-fill-color:transparent;text-shadow:none}13%,78%{color:#52e0a2;-webkit-text-fill-color:#52e0a2;text-shadow:0 0 28px #52e0a266}84%,100%{color:transparent;-webkit-text-fill-color:transparent;text-shadow:none}}
+.big span:nth-child(3){animation-name:bf2}
+@keyframes bf2{0%,14%{color:transparent;-webkit-text-fill-color:transparent;text-shadow:none}19%,78%{color:#76e3ac;-webkit-text-fill-color:#76e3ac;text-shadow:0 0 28px #76e3ac66}84%,100%{color:transparent;-webkit-text-fill-color:transparent;text-shadow:none}}
+.big span:nth-child(4){animation-name:bf3}
+@keyframes bf3{0%,20%{color:transparent;-webkit-text-fill-color:transparent;text-shadow:none}25%,78%{color:#a0e2ae;-webkit-text-fill-color:#a0e2ae;text-shadow:0 0 28px #a0e2ae66}84%,100%{color:transparent;-webkit-text-fill-color:transparent;text-shadow:none}}
+.big span:nth-child(5){animation-name:bf4}
+@keyframes bf4{0%,26%{color:transparent;-webkit-text-fill-color:transparent;text-shadow:none}31%,78%{color:#c4dda4;-webkit-text-fill-color:#c4dda4;text-shadow:0 0 28px #c4dda466}84%,100%{color:transparent;-webkit-text-fill-color:transparent;text-shadow:none}}
+.big span:nth-child(6){animation-name:bf5}
+@keyframes bf5{0%,32%{color:transparent;-webkit-text-fill-color:transparent;text-shadow:none}37%,78%{color:#e0d296;-webkit-text-fill-color:#e0d296;text-shadow:0 0 28px #e0d29666}84%,100%{color:transparent;-webkit-text-fill-color:transparent;text-shadow:none}}
+.big span:nth-child(7){animation-name:bf6}
+@keyframes bf6{0%,38%{color:transparent;-webkit-text-fill-color:transparent;text-shadow:none}43%,78%{color:#efca88;-webkit-text-fill-color:#efca88;text-shadow:0 0 28px #efca8866}84%,100%{color:transparent;-webkit-text-fill-color:transparent;text-shadow:none}}
+.big span:nth-child(8){animation-name:bf7}
+@keyframes bf7{0%,44%{color:transparent;-webkit-text-fill-color:transparent;text-shadow:none}49%,78%{color:#f6d79a;-webkit-text-fill-color:#f6d79a;text-shadow:0 0 28px #f6d79a66}84%,100%{color:transparent;-webkit-text-fill-color:transparent;text-shadow:none}}
 .legal{margin-top:24px;font-size:.75rem;color:var(--muted)}
 
 /* ---------- modal ---------- */
@@ -363,7 +383,7 @@ footer{padding:12vh clamp(18px,6vw,90px) 40px;background:var(--bg);overflow:hidd
     <div><h4>Contact</h4><a href="mailto:info@intelexatechnologies.com">info@intelexatechnologies.com</a><a href="#">Replace with your number</a></div>
     <div><h4>Socials</h4><a href="#">LinkedIn</a><a href="#">X</a><a href="#">Instagram</a></div>
   </div>
-  <div class="big">INTELEXA</div>
+  <div class="big" id="bigWord" aria-label="INTELEXA"><span aria-hidden="true">I</span><span aria-hidden="true">N</span><span aria-hidden="true">T</span><span aria-hidden="true">E</span><span aria-hidden="true">L</span><span aria-hidden="true">E</span><span aria-hidden="true">X</span><span aria-hidden="true">A</span></div>
   <div class="legal">© 2026 Intelexa Technologies. All rights reserved.</div>
 </footer>
 
@@ -704,6 +724,10 @@ if(typeof fetch==='function'){
   }).catch(()=>{}).finally(()=>clearTimeout(to));
 }
 })();
+</script>
+<script>
+(function(){const b=document.getElementById('bigWord');if(!b||!('IntersectionObserver' in window)){if(b)b.classList.add('run');return}
+new IntersectionObserver(es=>es.forEach(e=>b.classList.toggle('run',e.isIntersecting)),{threshold:.3}).observe(b)})();
 </script>
 </body>
 </html>
